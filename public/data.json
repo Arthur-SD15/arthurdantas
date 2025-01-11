@@ -1,0 +1,16 @@
+{
+    "socials": [
+        {
+            "icon": "FaLinkedin",
+            "link": "https://www.linkedin.com/in/arthur-sd15/"
+        },
+        {
+            "icon": "FaGithub",
+            "link": "https://github.com/Arthur-SD15"
+        },
+        {
+            "icon": "FaInstagram",
+            "link": "https://www.instagram.com/_arthursilva7/"
+        }
+    ]
+}

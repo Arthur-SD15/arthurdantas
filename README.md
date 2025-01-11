@@ -1,3 +1,3 @@
-![Banner](/assets/capa-readme.png)
+![Banner](/public/images/cover-readme.png)
 
 [...]
