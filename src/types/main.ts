@@ -1,3 +1,8 @@
+type routes = {
+    name: string;
+    path: string;
+}
+
 type social = {
     name: string,
     icon: string,
@@ -6,6 +11,10 @@ type social = {
 
 type data = {
     socials: social[]
+    routes: {
+        en: routes[],
+        pt: routes[]
+    }
 }
 
-export type { data, social };
+export type { data, routes, social };
