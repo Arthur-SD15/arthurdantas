@@ -12,9 +12,13 @@ export default {
       colors: {
         grey: {
           800: '#040404',
-          900: '#000000'
+          900: '#000000',
+          100: '#2f2f2f70'
         },
       },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+      }
     },
   },
   plugins: [],
