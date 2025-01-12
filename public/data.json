@@ -12,5 +12,21 @@
             "icon": "FaInstagram",
             "link": "https://www.instagram.com/_arthursilva7/"
         }
-    ]
+    ],
+    "routes": {
+        "en": [
+            { "name": "Home", "path": "/" },
+            { "name": "Career", "path": "/career" },
+            { "name": "Skills", "path": "/skills" },
+            { "name": "Projects", "path": "/projects" },
+            { "name": "Resume", "path": "/resume" }
+        ],
+        "pt": [
+            { "name": "Início", "path": "/" },
+            { "name": "Carreira", "path": "/career" },
+            { "name": "Habilidades", "path": "/skills" },
+            { "name": "Projetos", "path": "/projects" },
+            { "name": "Resumo", "path": "/resume" }
+        ]
+    }
 }

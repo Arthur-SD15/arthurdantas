@@ -25,3 +25,9 @@ html {
 .scroll-hide::-webkit-scrollbar {
     display: none;
 }
+
+
+.custom-line-height {
+    line-height: 1.2; /* Ajuste a altura da linha conforme necessário */
+  }
+  

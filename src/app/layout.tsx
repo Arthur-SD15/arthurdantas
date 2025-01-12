@@ -1,7 +1,12 @@
-'use client';
-import Head from './head';
 import { Poppins } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import { AppDataProvider } from './context/DataContext';
+import 'flag-icon-css/css/flag-icons.min.css';
+import DataProviders from './providers/DataProviders';
+import CustomHead from './head';
+import Navbar from '../components/Header';
+import Footer from '../components/[locale]/Footer';
+import '../../lib/i18n';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,12 +21,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <Head />
-      <ThemeProvider attribute='class' defaultTheme='light'>
-        <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
-          {children}
-        </body>
-      </ThemeProvider>
+      <CustomHead />
+      <AppDataProvider>
+        <ThemeProvider attribute='class' defaultTheme='light'>
+          <DataProviders>
+            <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidde`}>          
+              <Navbar />
+              
+              {children} 
+              <Footer />
+            </body>
+          </DataProviders>
+        </ThemeProvider>
+      </AppDataProvider>
     </html>
   )
 }

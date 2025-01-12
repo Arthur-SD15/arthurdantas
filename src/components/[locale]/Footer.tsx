@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-2">
-        <p className="text-sm text-[12px] font-[Plus Jakarta Sans], sans-serif text-center font-medium text-black dark:text-[#FFFFFF]">
+        <p className="text-[12px] font-[Plus Jakarta Sans], sans-serif text-center font-medium text-black dark:text-[#FFFFFF]">
           Copyright © {currentYear} {t('footer-rights')} | Arthur Silva Dantas
         </p>
       </div>
