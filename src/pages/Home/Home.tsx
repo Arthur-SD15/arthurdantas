@@ -1,6 +1,6 @@
 'use client';
-import { data } from "@/types/main";
-import Bottons from "@/components/Socials";
+import { data } from "@/src/types/main";
+import Socials from "@/src/components/Socials";
 
 interface Props {
     data: data,
@@ -9,7 +9,7 @@ interface Props {
 const Home = ({ data }: Props) => {
     return (
         <>
-            <Bottons socials={data.socials} />
+            <Socials socials={data.socials} />
         </>
     )
 }

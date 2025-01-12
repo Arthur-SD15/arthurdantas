@@ -1,15 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { FaNodeJs } from "react-icons/fa"
-import { data } from "@/types/main";
-import Home from "@/pages/Home/Home";
+import { data } from "@/src/types/main";
+import Home from "@/src/pages/Home/Home";
 import "../styles/index.css";
 
-interface Props {
-  initialData: data;
-}
-
-const HomePage = ({ initialData }: Props) => {
+const HomePage = () => {
   const [data, setData] = useState<data | null>(null);
 
   useEffect(() => {
@@ -26,9 +21,10 @@ const HomePage = ({ initialData }: Props) => {
       {data ? 
         <Home data={data} /> 
         :
-        <div className='h-screen w-screen flex flex-col items-center justify-center gap-5 text-violet-600 fixed z-30 bg-gray-100 dark:bg-grey-900'>
-          {/*<FaNodeJs size={100} className='animate-pulse' />*/}
-          {/*<p className='animate-pulse text-xl'>Loading...</p>*/}
+        <div className='h-screen w-screen flex items-center justify-center fixed top-0 left-0 z-50 bg-gray-100 dark:bg-grey-900'>
+          <div className='relative bg-white p-8 w-full sm:w-80 md:w-96 lg:w-[22rem] xl:w-[45rem] h-[200px] rounded-lg shadow-lg flex items-center justify-center'>
+            <p className='text-lime-900 text-xl animate-pulse'>Loading...</p>
+          </div>
         </div>
       }
     </>
