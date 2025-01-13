@@ -9,7 +9,7 @@ export default function Mode() {
         <>
             <span
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="grid place-items-center p-3 hover:animate-bounce rounded-full bg-lime-900 text-white cursor-pointer transition-colors"
+                className="grid place-items-center p-3 rounded-full bg-lime-900 text-white cursor-pointer transition-colors"
             >
                 {theme === 'dark' ? <FiSun /> : <FiMoon />}
             </span> 

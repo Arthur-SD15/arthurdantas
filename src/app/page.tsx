@@ -1,7 +1,6 @@
 'use client';
 import { useData } from './context/DataContext';
 import Home from '@/src/pages/Home/Home';
-import "../styles/index.css";
 
 const HomePage = () => {
   const { data } = useData();

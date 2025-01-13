@@ -13,7 +13,7 @@ const Socials = ({ socials }: { socials: social[] }) => {
         >
             {socials.map((s: social) => {
                 return (
-                    <Link href={s.link} target="_blank" rel="noreferrer" key={s.icon} className="grid place-items-center p-3 hover:animate-bounce rounded-full bg-lime-900 text-white">
+                    <Link href={s.link} target="_blank" rel="noreferrer" key={s.icon} className="grid place-items-center p-3 rounded-full bg-lime-900 text-white">
                         {
                             React.createElement(Fa[s.icon as keyof typeof Fa])
                         }
