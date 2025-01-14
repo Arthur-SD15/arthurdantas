@@ -2,6 +2,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import Mode from '../Mode';
+import { useEffect, useState } from 'react';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 interface HeaderMobileProps {
@@ -12,6 +13,16 @@ interface HeaderMobileProps {
 }
 
 const HeaderMobile = ({ isMenuOpen, routes, currentLang, onLanguageChange }: HeaderMobileProps) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   const navigationVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: (custom: number) => ({

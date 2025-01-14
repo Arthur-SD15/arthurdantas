@@ -1,29 +1,34 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
-import { useTheme } from 'next-themes';
-import { FaEnvelope, FaMapPin, FaUser } from 'react-icons/fa';
-import Image from 'next/image';
+import { useData } from '@/src/app/context/DataContext';
+import React from 'react';
+import * as Fa from 'react-icons/fa';
+import Link from 'next/link';
+import Logo from '../Logo';
 
 const Footer = () => {
-  const { t } = useTranslation('common');
-  const { theme } = useTheme();
-  const currentYear = new Date().getFullYear();
+  const { t, i18n } = useTranslation('common');
+  const { data } = useData();
+  const [mounted, setMounted] = useState(false);
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
 
-  const logoLight = '/images/logoLight.png';
-  const logoDark = '/images/logoDark.png';
+  useEffect(() => {
+    setMounted(true);
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
+  if (!mounted || currentYear === null || !data || i18n.isInitialized === false) {
+    return null;
+  }
 
   return (
     <footer className="bg-white dark:bg-grey-800 text-black dark:text-white py-3">
-      <div className="lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto p-6">
+      <div className="w-11/12 lg:w-11/12 2xl:w-11/12 mx-auto py-6">
         <div className="grid grid-cols-12 gap-2">
-          <div className="col-span-12 lg:col-span-6 md:mb-0">
+          <div className="col-span-12 lg:col-span-7 md:mb-0">
             <h5 className="mb-4 font-medium uppercase">
-              <Image 
-                src={theme === 'dark' ? logoDark : logoLight}
-                alt="Logo"
-                height={32}
-                width={32}
-              />
+              <Logo size={32} />
             </h5>
             <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60">
               {t('footer-message')}
@@ -31,26 +36,24 @@ const Footer = () => {
           </div>
           <div className="col-span-12 lg:col-span-2 md:mb-0">
           </div>
-          <div className="col-span-12 lg:col-span-4 lg:mb-0">
-            <h5 className="mb-2 font-medium uppercase">{t('contact')}</h5>
-            <p className="text-[12px] font-medium font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60">
-              <span className="flex items-center">
-                <FaMapPin className="mr-2" /> 
-                Campo Grade, Mato Grosso do Sul, {t('brazil')}.
-              </span>
-              <span className="flex items-center">
-                <FaEnvelope className="mr-2" /> 
-                contato.arthurdantas.dev@gmail.com
-              </span>
-              <span className="flex items-center">
-                <FaUser className="mr-2" /> 
-                Arthur Silva Dantas | {t('software-engineer')}
-              </span>
-            </p>
+          <div className="col-span-12 lg:col-span-3 hidden lg:flex items-center justify-end">
+          <div className="flex gap-4">
+            {data.socials.general.map((social) => (
+              <Link
+                href={social.link}
+                target="_blank"
+                rel="noreferrer"
+                key={social.icon}
+                className="grid place-items-center p-3 rounded-full bg-grey-200 text-black dark:text-white"
+              >
+                {React.createElement(Fa[social.icon as keyof typeof Fa])}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-2">
+      </div>
+      <div className="flex justify-center items-center">
         <p className="text-[12px] font-[Plus Jakarta Sans], sans-serif text-center font-medium text-black dark:text-[#FFFFFF]">
           Copyright © {currentYear} {t('footer-rights')} | Arthur Silva Dantas
         </p>

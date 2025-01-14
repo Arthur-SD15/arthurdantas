@@ -9,7 +9,7 @@ const Socials = ({ socials }: { socials: social[] }) => {
     return (
         <section 
             id="socials" 
-            className="fixed xl:bottom-4 xl:left-4 2xl:bottom-10 2xl:left-10 hidden xl:flex flex-col gap-3 z-20 xl:block"
+            className="fixed xl:bottom-4 xl:left-2 2xl:bottom-10 2xl:left-10 hidden xl:flex flex-col gap-3 z-20 xl:block"
         >
             {socials.map((s: social) => {
                 return (

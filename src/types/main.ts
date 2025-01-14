@@ -1,16 +1,20 @@
+type social = {
+    name: string,
+    icon: string,
+    link: string,
+    type: "general" | "specific"
+}
+
 type routes = {
     name: string;
     path: string;
 }
 
-type social = {
-    name: string,
-    icon: string,
-    link: string
-}
-
 type data = {
-    socials: social[]
+    socials: {
+        general: social[];
+        specific: social[];
+    },
     routes: {
         en: routes[],
         pt: routes[]

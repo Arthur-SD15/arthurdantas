@@ -9,7 +9,7 @@ interface Props {
 const Home = ({ data }: Props) => {
     return (
         <>
-            <Socials socials={data.socials} />
+            <Socials socials={data.socials.specific} />
         </>
     )
 }

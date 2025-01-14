@@ -1,18 +1,42 @@
 {
-    "socials": [
-        {
-            "icon": "FaLinkedin",
-            "link": "https://www.linkedin.com/in/arthur-sd15/"
-        },
-        {
-            "icon": "FaGithub",
-            "link": "https://github.com/Arthur-SD15"
-        },
-        {
-            "icon": "FaInstagram",
-            "link": "https://www.instagram.com/_arthursilva7/"
-        }
-    ],
+    "socials": {
+        "general": [
+            {
+                "icon": "FaLinkedin",
+                "link": "https://www.linkedin.com/in/arthur-sd15/"
+            },
+            {
+                "icon": "FaGithub",
+                "link": "https://github.com/Arthur-SD15"
+            },
+            {
+                "icon": "FaGraduationCap",
+                "link": "http://lattes.cnpq.br/5805307670427314"
+            }, 
+            {
+                "icon": "FaInstagram",
+                "link": "https://www.instagram.com/_arthursilva7/"
+            },
+            {
+                "icon": "FaEnvelope",
+                "link": "mailto:contato.arthurdantas.dev@gmail.com"
+            }
+        ],
+        "specific": [
+            {
+                "icon": "FaLinkedin",
+                "link": "https://www.linkedin.com/in/arthur-sd15/"
+            },
+            {
+                "icon": "FaGithub",
+                "link": "https://github.com/Arthur-SD15"
+            },
+            {
+                "icon": "FaInstagram",
+                "link": "https://www.instagram.com/_arthursilva7/"
+            }
+        ]
+    },
     "routes": {
         "en": [
             { "name": "Home", "path": "/" },
