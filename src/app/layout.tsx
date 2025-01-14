@@ -3,9 +3,9 @@ import { ThemeProvider } from 'next-themes';
 import { AppDataProvider } from './context/DataContext';
 import 'flag-icon-css/css/flag-icons.min.css';
 import DataProviders from './providers/DataProviders';
-import CustomHead from './head';
-import Navbar from '../components/Header';
+import Navbar from '../components/Header/Header';
 import Footer from '../components/[locale]/Footer';
+import '../styles/index.css';
 import '../../lib/i18n';
 
 const poppins = Poppins({
@@ -20,20 +20,33 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt">
-      <CustomHead />
-      <AppDataProvider>
-        <ThemeProvider attribute='class' defaultTheme='light'>
-          <DataProviders>
-            <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidde`}>          
+    <html lang="pt" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="arthur dantas, portfolio, full stack, desenvolvedor, dev, engenheiro de software, nextjs portfolio, typescript portfolio, portfolio website" />
+        <meta property="og:site_name" content="Portfolio | Arthur Dantas" />
+        <meta property="og:title" content="Portfolio | Arthur Dantas - Engenheiro de Software" />
+        <meta property="og:description" content="Arthur Dantas, desenvolvedor de software full stack, com experiência na criação de aplicações web, construindo soluções modernas, eficientes e escaláveis." />
+        <meta name="description" content="Portfolio de Arthur Dantas, Engenheiro de Software Full Stack especialista em desenvolvimento web e soluções inovadoras." />
+        <meta property="og:type" content="website" />
+        <meta name="author" content="Arthur Dantas" />
+        <meta name="content-language" content="pt" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="application-name" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
+        <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
+        <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>
+      </head>
+      <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidde`}>
+        <AppDataProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <DataProviders>
               <Navbar />
-              
-              {children} 
+              {children}
               <Footer />
-            </body>
-          </DataProviders>
-        </ThemeProvider>
-      </AppDataProvider>
+            </DataProviders>
+          </ThemeProvider>
+        </AppDataProvider>
+      </body>
     </html>
-  )
+  );
 }

@@ -11,6 +11,7 @@ i18n
   .use(initReactI18next)
   .init({
     ...nextI18nextConfig,
+    lng: 'pt',
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
