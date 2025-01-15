@@ -21,7 +21,27 @@
         "tools": [
             { "name": "Git", "special": false },
             { "name": "Postman", "special": false }
-        ]
+        ],
+        "softSkills": {
+            "en": [
+                { "name": "Agile", "special": true },
+                { "name": "Proactive", "special": false },
+                { "name": "Adaptability", "special": true },
+                { "name": "Collaborative", "special": true },
+                { "name": "Critical Thinking", "special": true },
+                { "name": "Resilient", "special": true },
+                { "name": "Communicative", "special": false }
+            ],
+            "pt": [
+                { "name": "Ágil", "special": true },
+                { "name": "Proativo", "special": false },
+                { "name": "Adaptabilidade", "special": true },
+                { "name": "Colaboratividade", "special": true },
+                { "name": "Pensamento Crítico", "special": true },
+                { "name": "Resiliente", "special": true },
+                { "name": "Comunicativo", "special": false }
+            ]
+        }
     },
     "socials": {
         "general": [

@@ -8,6 +8,10 @@ type skills = {
     frameworks: skillsCategory[];
     databases: skillsCategory[];
     tools: skillsCategory[];
+    softSkills: {
+        en: skillsCategory[];
+        pt: skillsCategory[];
+    };
 };
 
 type social = {
