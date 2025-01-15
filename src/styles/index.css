@@ -26,8 +26,22 @@ html {
     display: none;
 }
 
-
 .custom-line-height {
-    line-height: 1.2; /* Ajuste a altura da linha conforme necessário */
-  }
-  
+    line-height: 1.2;
+}
+
+@media (max-width: 375px) {
+    .section-responsiveness {
+        padding-top: 5vh;
+        height: 120vh;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 663px) and (max-height: 665px) {
+    .section-responsiveness{
+        padding-top: 5vh;
+        height: 120vh;
+        overflow-x: hidden;
+    }
+}

@@ -1,4 +1,28 @@
 {
+    "skills": {
+        "languages": [
+            { "name": "JavaScript", "special": true },
+            { "name": "TypeScript", "special": true },
+            { "name": "Python", "special": false },
+            { "name": "HTML", "special": false },
+            { "name": "CSS", "special": false }
+        ],
+        "frameworks": [
+            { "name": "React", "special": true },
+            { "name": "Node.js", "special": true },
+            { "name": "Express", "special": false },
+            { "name": "Next.js", "special": true },
+            { "name": "NestJS", "special": true }
+        ],
+        "databases": [
+            { "name": "Prisma", "special": true },
+            { "name": "PostgreSQL", "special": false }
+        ],
+        "tools": [
+            { "name": "Git", "special": false },
+            { "name": "Postman", "special": false }
+        ]
+    },
     "socials": {
         "general": [
             {

@@ -21,12 +21,17 @@ export default {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
       animation: {
-        'slide-down': 'slideDown 1s ease-out',
+        'slide-down': 'slideDown 1.2s ease-out',
+        'rise-from-ground': 'riseFromGround 1s ease-out',
       },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(-100px)' },
           '100%': { transform: 'translateY(0)' },
+        },
+        riseFromGround: {
+          '0%': { transform: 'translateY(100px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
     },

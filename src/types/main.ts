@@ -1,3 +1,15 @@
+type skillsCategory = {
+    name: string;
+    special: boolean;
+};
+
+type skills = {
+    languages: skillsCategory[];
+    frameworks: skillsCategory[];
+    databases: skillsCategory[];
+    tools: skillsCategory[];
+};
+
 type social = {
     name: string,
     icon: string,
@@ -11,6 +23,7 @@ type routes = {
 }
 
 type data = {
+    skills: skills;
     socials: {
         general: social[];
         specific: social[];
@@ -21,4 +34,4 @@ type data = {
     }
 }
 
-export type { data, routes, social };
+export type { data, routes, social, skills, skillsCategory };

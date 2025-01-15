@@ -4,7 +4,7 @@ import { AppDataProvider } from './context/DataContext';
 import 'flag-icon-css/css/flag-icons.min.css';
 import DataProviders from './providers/DataProviders';
 import Navbar from '../components/Header/Header';
-import Footer from '../components/[locale]/Footer';
+import Footer from '../components/Footer/Footer';
 import '../styles/index.css';
 import '../../lib/i18n';
 
