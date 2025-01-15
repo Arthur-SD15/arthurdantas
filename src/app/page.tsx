@@ -1,5 +1,5 @@
 'use client';
-import { useData } from './context/DataContext';
+import { useData } from './context/DataContextProvider';
 import Home from '@/src/pages/Home/Home';
 
 const HomePage = () => {

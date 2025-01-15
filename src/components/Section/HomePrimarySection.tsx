@@ -1,3 +1,4 @@
+'use client';
 import { skillsCategory } from "@/src/types/main";
 import { useTranslation } from 'next-i18next';
 import HomePrimaryImage from "../Images/HomePrimaryImage";

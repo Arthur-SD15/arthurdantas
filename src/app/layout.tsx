@@ -1,8 +1,8 @@
 import { Poppins } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-import { AppDataProvider } from './context/DataContext';
+import { DataContextProvider } from './context/DataContextProvider';
 import 'flag-icon-css/css/flag-icons.min.css';
-import DataProviders from './providers/DataProviders';
+import TranslationProvider from './providers/TranslationProvider';
 import Navbar from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import '../styles/index.css';
@@ -37,15 +37,15 @@ export default function RootLayout({
         <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>
       </head>
       <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidde`}>
-        <AppDataProvider>
+        <DataContextProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
-            <DataProviders>
+            <TranslationProvider>
               <Navbar />
               {children}
               <Footer />
-            </DataProviders>
+            </TranslationProvider>
           </ThemeProvider>
-        </AppDataProvider>
+        </DataContextProvider>
       </body>
     </html>
   );

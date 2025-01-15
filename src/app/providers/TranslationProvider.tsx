@@ -7,8 +7,8 @@ type ProvidersProps = {
     children: ReactNode;
 };
 
-const DataProviders = ({ children }: ProvidersProps) => {
+const TranslationProvider = ({ children }: ProvidersProps) => {
     return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
 }
 
-export default DataProviders;
+export default TranslationProvider;

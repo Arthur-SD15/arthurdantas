@@ -8,7 +8,7 @@ interface DataContextProps {
 
 const DataContext = createContext<DataContextProps>({ data: null });
 
-export const AppDataProvider = ({ children }: { children: ReactNode }) => {
+export const DataContextProvider = ({ children }: { children: ReactNode }) => {
   const [data, setData] = useState<data | null>(null);
 
   useEffect(() => {

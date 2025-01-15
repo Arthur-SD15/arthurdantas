@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { useData } from '../../app/context/DataContext';
+import { useData } from '../../app/context/DataContextProvider';
 import Link from 'next/link';
 import Logo from '../Logo';
 import LanguageSwitcher from '../LanguageSwitcher';
@@ -28,8 +28,8 @@ const Navbar = () => {
   }
 
   return (
-    <header className="animate-slide-down dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex fixed">
-      <nav className="w-11/12 mx-auto py-3 flex items-center justify-between">
+    <header className="animate-slide-down dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex fixed lg:backdrop-blur-lg">
+      <nav className="w-10/12 mx-auto py-3 flex items-center justify-between">
         <div className="flex items-center z-50">
           <Logo size={46} />
         </div>
@@ -59,7 +59,6 @@ const Navbar = () => {
           })}
           <LanguageSwitcher currentLang={currentLang} onLanguageChange={handleLanguageChange} />
         </div>
-
         <div className="sm:hidden flex items-center z-50">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}

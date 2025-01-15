@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
-import { useData } from '@/src/app/context/DataContext';
+import { useData } from '@/src/app/context/DataContextProvider';
 import React from 'react';
 import * as Fa from 'react-icons/fa';
 import Link from 'next/link';
@@ -37,21 +37,21 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-2 md:mb-0">
           </div>
           <div className="col-span-12 lg:col-span-3 hidden lg:flex items-center justify-end">
-          <div className="flex gap-4">
-            {data.socials.general.map((social) => (
-              <Link
-                href={social.link}
-                target="_blank"
-                rel="noreferrer"
-                key={social.icon}
-                className="grid place-items-center p-3 rounded-full bg-grey-200 text-black dark:text-white"
-              >
-                {React.createElement(Fa[social.icon as keyof typeof Fa])}
-              </Link>
-            ))}
+            <div className="flex gap-4">
+              {data.socials.general.map((social) => (
+                <Link
+                  href={social.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={social.icon}
+                  className="grid place-items-center p-3 rounded-full bg-grey-200 text-black dark:text-white"
+                >
+                  {React.createElement(Fa[social.icon as keyof typeof Fa])}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div className="flex justify-center items-center">
         <p className="text-[12px] font-[Plus Jakarta Sans], sans-serif text-center font-medium text-black dark:text-[#FFFFFF]">
