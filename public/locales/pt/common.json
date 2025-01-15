@@ -1,11 +1,14 @@
 {   
-    "brazil": "Brasil",
     "connect": "Conecte-se comigo",
-    "contact": "Contato",
-    "hi": "Olá!",
-    "i-am": "Me chamo Arthur Dantas",
-    "initial-home": "Sou Desenvolvedor Full Stack, com ênfase em aplicações web, criando soluções altamente usáveis, eficientes e escaláveis. Tenho experiência em projetos robustos com sistemas de grande porte, bem como em iniciativas menores. Aplicando tanto conceitos acadêmicos quanto práticos de Engenharia de Software na indústria, com foco em metodologias ágeis para garantir a entrega de soluções de alta qualidade.",
+    "visit-career": "Visite minha carreira",
+    "visit-skill": "Visite minhas habilidades",
+    "home-primary-section-title-1": "Olá!",
+    "home-primary-section-title-2": "Me chamo Arthur Dantas",
+    "home-second-section-title": "Engenheiro de Software Full Stack",
+    "home-third-section-title": "Minhas Soft Skills e Características",
+    "home-primary-section-paragraph": "Sou Desenvolvedor Full Stack, com ênfase em aplicações web, criando soluções altamente usáveis, eficientes e escaláveis. Tenho experiência em projetos robustos com sistemas de grande porte, bem como em iniciativas menores. Aplicando tanto conceitos acadêmicos quanto práticos de Engenharia de Software na indústria, com foco em metodologias ágeis para garantir a entrega de soluções de alta qualidade.",
+    "home-second-section-paragraph": "Possuo formação técnica em Informática pelo Instituto Federal de Mato Grosso do Sul e atualmente sou estudante de Engenharia de Software na Universidade Federal de Mato Grosso do Sul. Ao longo da minha trajetória acadêmica e profissional, me dedico no desenvolvimento web full stack e participei de diversos projetos, ganhando experiência na área de software. Busco sempre ir além da codificação, focando na resolução de problemas, análise de requisitos e documentação, aspectos essenciais na Engenharia de Software.",
+    "home-third-section-paragraph": "",
     "footer-rights": "Todos os direitos reservados",
-    "footer-message": "Arthur Dantas é desenvolvedor de software full stack e estudante de Engenharia de Software pela Universidade Federal de Mato Grosso do Sul. Reside em Campo Grande, MS, Brasil. Especializa-se no desenvolvimento de aplicações web eficientes e escaláveis, focadas em oferecer soluções de alta qualidade e desempenho.",
-    "software-engineer": "Engenheiro de Software"
+    "footer-message": "Arthur Dantas é desenvolvedor de software full stack e estudante de Engenharia de Software pela Universidade Federal de Mato Grosso do Sul. Reside em Campo Grande, MS, Brasil. Especializa-se no desenvolvimento de aplicações web eficientes e escaláveis, focadas em oferecer soluções de alta qualidade e desempenho."
 }

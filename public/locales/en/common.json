@@ -1,11 +1,14 @@
 {
-    "brazil": "Brazil",
     "connect": "Connect with me",
-    "contact": "Contact",
-    "hi": "Hi!",
-    "i-am": "I'm Arthur Dantas",
-    "initial-home": "I'm a Full Stack Developer, with a focus on web applications, creating highly usable, efficient, and scalable solutions. I have experience in robust projects with large systems, as well as in smaller initiatives. Applying both academic and practical concepts of Software Engineering in the industry, focusing on agile methodologies to ensure the delivery of high-quality solutions.",
+    "visit-career": "Visit my career",
+    "visit-skill": "Visit my skills",
+    "home-primary-section-title-1": "Hi!",
+    "home-primary-section-title-2": "I'm Arthur Dantas",
+    "home-second-section-title": "Full Stack Software Engineer",
+    "home-third-section-title": "My Soft Skills and Characteristics",
+    "home-primary-section-paragraph": "I'm a Full Stack Developer, with a focus on web applications, creating highly usable, efficient, and scalable solutions. I have experience in robust projects with large systems, as well as in smaller initiatives. Applying both academic and practical concepts of Software Engineering in the industry, focusing on agile methodologies to ensure the delivery of high-quality solutions.",
+    "home-second-section-paragraph": "I have a technical degree in Computer Technician from the Federal Institute of Mato Grosso do Sul and I am currently a Software Engineering student at the Federal University of Mato Grosso do Sul. Throughout my academic and professional career, I dedicate myself to full stack web development and have participated in several projects, gaining experience in the software area. I always seek to go beyond coding, focusing on problem-solving, requirements analysis, and documentation, essential aspects of Software Engineering.",
+    "home-third-section-paragraph": "",
     "footer-rights": "All rights reserved",
-    "footer-message": "Arthur Dantas is a full stack software developer and a Software Engineering student at the Federal University of Mato Grosso do Sul. He resides in Campo Grande, MS, Brazil. He specializes in developing efficient and scalable web applications, focused on providing high-quality and high-performance solutions.",
-    "software-engineer": "Software Engineer"
+    "footer-message": "Arthur Dantas is a full stack software developer and a Software Engineering student at the Federal University of Mato Grosso do Sul. He resides in Campo Grande, MS, Brazil. He specializes in developing efficient and scalable web applications, focused on providing high-quality and high-performance solutions."
 }

@@ -12,12 +12,12 @@ export default function HomePrimarySection({ skills }: { skills: skillsCategory[
                 <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-full flex items-center justify-start">
                     <div className="flex flex-col items-start justify-center text-left">
                         <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                            {t('hi')}
+                            {t('home-primary-section-title-1')}
                             <span className="text-3xl animate-tchau">👋</span>
-                            <br />{t('i-am')}
+                            <br />{t('home-primary-section-title-2')}
                         </h1>
                         <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60 overflow-hidden break-words">
-                            {t('initial-home')}
+                            {t('home-primary-section-paragraph')}
                         </p>
                         <ul className="flex flex-wrap gap-2 mt-2">
                             {skills
