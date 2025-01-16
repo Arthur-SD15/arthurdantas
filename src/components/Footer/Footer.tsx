@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="col-span-12 lg:col-span-2 md:mb-0">
           </div>
-          <div className="col-span-12 lg:col-span-3 hidden lg:flex items-center justify-end">
+          <div className="col-span-12 lg:col-span-3 lg:flex items-center justify-end">
             <div className="flex gap-4">
               {data.socials.general.map((social) => (
                 <Link

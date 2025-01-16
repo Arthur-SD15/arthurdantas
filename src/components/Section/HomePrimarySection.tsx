@@ -12,12 +12,18 @@ export default function HomePrimarySection({ skills }: { skills: skillsCategory[
                 <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-full flex items-center justify-start">
                     <div className="flex flex-col items-start justify-center text-left">
                         <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                            {t('home-primary-section-title-1')}
-                            <span className="text-3xl animate-tchau">👋</span>
-                            <br />{t('home-primary-section-title-2')}
+                            {t('home-primary-section-title-1')} {' '}
+                            <span className="text-3xl animate-tchau inline-block">👋</span>
+                            <br />{t('home-primary-section-title-2')} 
                         </h1>
                         <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60 overflow-hidden break-words">
-                            {t('home-primary-section-paragraph')}
+                            {t('iam')} 
+                            <span
+                            className="text-[13px] font-bold text-justify font-[Plus Jakarta Sans], sans-serif bg-clip-text text-transparent whitespace-nowrap text-center animate-gradient dark:bg-gradient-to-r dark:from-lime-700 dark:via-lime-600 dark:to-lime-500 bg-gradient-to-r from-lime-900 via-lime-700 to-lime-600"
+                            >
+                                {' '} {t('home-primary-section-paragrapg-span')} {' '}
+                            </span>
+                            {t('home-primary-section-paragraph')} 
                         </p>
                         <ul className="flex flex-wrap gap-2 mt-2">
                             {skills
