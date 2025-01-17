@@ -1,24 +1,21 @@
 'use client';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
-import { useData } from '@/src/app/context/DataContextProvider';
-import React from 'react';
-import * as Fa from 'react-icons/fa';
+import { useData } from '@/app/context/DataContextProvider';
 import Link from 'next/link';
 import Logo from '../Logo';
+import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const { t, i18n } = useTranslation('common');
   const { data } = useData();
-  const [mounted, setMounted] = useState(false);
   const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
-    setMounted(true);
     setCurrentYear(new Date().getFullYear());
   }, []);
 
-  if (!mounted || currentYear === null || !data || i18n.isInitialized === false) {
+  if (!data || i18n.isInitialized === false || currentYear === null) {
     return null;
   }
 
@@ -34,19 +31,23 @@ const Footer = () => {
               {t('footer-message')}
             </p>
           </div>
-          <div className="col-span-12 lg:col-span-2 md:mb-0">
-          </div>
+          <div className="col-span-12 lg:col-span-2 md:mb-0"></div>
           <div className="col-span-12 lg:col-span-3 lg:flex items-center justify-end">
             <div className="flex gap-4">
               {data.socials.general.map((social) => (
                 <Link
+                  aria-label="Redes sociais"
                   href={social.link}
                   target="_blank"
                   rel="noreferrer"
                   key={social.icon}
                   className="grid place-items-center p-3 rounded-full bg-grey-200 text-black dark:text-white"
                 >
-                  {React.createElement(Fa[social.icon as keyof typeof Fa])}
+                  {social.icon === 'FaLinkedin' && <FaLinkedin />}
+                  {social.icon === 'FaGithub' && <FaGithub />}
+                  {social.icon === 'FaGraduationCap' && <FaGraduationCap />}
+                  {social.icon === 'FaInstagram' && <FaInstagram />}
+                  {social.icon === 'FaEnvelope' && <FaEnvelope />}
                 </Link>
               ))}
             </div>

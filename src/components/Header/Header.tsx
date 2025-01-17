@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { useData } from '../../app/context/DataContextProvider';
+import { useData } from '@/app/context/DataContextProvider';
 import Link from 'next/link';
 import Logo from '../Logo';
 import LanguageSwitcher from '../LanguageSwitcher';
@@ -65,6 +65,7 @@ const Navbar = () => {
         </div>
         <div className="sm:hidden flex items-center z-50">
           <button
+            aria-label="Abrir menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-black dark:text-white focus:outline-none"
           >
@@ -96,6 +97,7 @@ const Navbar = () => {
       </nav>
       <HeaderMobile 
         isMenuOpen={isMenuOpen} 
+        setIsMenuOpen={setIsMenuOpen}
         routes={data?.routes[currentLang] || []} 
         currentLang={currentLang}
         onLanguageChange={handleLanguageChange}

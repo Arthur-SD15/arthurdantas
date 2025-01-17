@@ -22,8 +22,13 @@ export default {
       animation: {
         'slide-down': 'slideDown 1.2s ease-out',
         'rise-from-ground': 'riseFromGround 1s ease-out',
+        'bounce': 'bounce 1s infinite',
       },
       keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
         slideDown: {
           '0%': { transform: 'translateY(-100px)' },
           '100%': { transform: 'translateY(0)' },

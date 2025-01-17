@@ -23,6 +23,7 @@ export default function HomeSecondSection() {
                         </p>
                         <Link href="/career/" className='w-full' passHref>
                             <button
+                                aria-label="Visitar carreira"
                                 className="flex flex-row justify-center items-center mt-4 px-6 py-3 gap-4 w-full h-[34px] bg-lime-900 rounded-[16px] border-none"
                             >
                                 <span className="text-white text-sm font-medium flex items-center">
@@ -32,6 +33,7 @@ export default function HomeSecondSection() {
                         </Link>
                         <Link href="/skills/" className='w-full' passHref>
                             <button
+                                aria-label="Visitar habilidades"
                                 className="flex flex-row justify-center items-center mt-4 px-6 py-3 gap-4 w-full h-[34px] border-2 border-solid box-border rounded-[16px] bg-transparent text-black dark:text-white dark:border-white"
                             >
                                 <span className="text-sm font-medium flex items-center">

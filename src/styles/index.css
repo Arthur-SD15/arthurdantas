@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +9,7 @@
 }
   
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
     
 ::-webkit-scrollbar {
@@ -80,4 +78,29 @@ html {
 
 .animate-tchau {
   animation: tchau 2s ease-in-out infinite;
+}
+
+@keyframes bigBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+}
+
+.dot {
+  animation: bigBounce 1.5s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
 }

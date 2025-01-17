@@ -3,7 +3,7 @@ import React from 'react';
 import { social } from '@/src/types/main';
 import Mode from './Mode';
 import Link from 'next/link';
-import * as Fa from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Socials = ({ socials }: { socials: social[] }) => {
     return (
@@ -13,12 +13,14 @@ const Socials = ({ socials }: { socials: social[] }) => {
         >
             {socials.map((s: social) => {
                 return (
-                    <Link href={s.link} target="_blank" rel="noreferrer" key={s.icon} className="grid place-items-center p-3 rounded-full bg-lime-900 text-white">
-                        {
-                            React.createElement(Fa[s.icon as keyof typeof Fa])
-                        }
+                    <Link href={s.link} target="_blank" rel="noreferrer" key={s.icon} className="grid place-items-center p-3 rounded-full bg-lime-900 text-white" arial-label="Redes sociais">
+                        {s.icon === 'FaLinkedin' && <FaLinkedin />}
+                        {s.icon === 'FaGithub' && <FaGithub />}
+                        {s.icon === 'FaGraduationCap' && <FaGraduationCap />}
+                        {s.icon === 'FaInstagram' && <FaInstagram />}
+                        {s.icon === 'FaEnvelope' && <FaEnvelope />}
                     </Link>
-                )
+                );
             })}
             <Mode />
         </section>

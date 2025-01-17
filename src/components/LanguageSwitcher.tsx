@@ -36,6 +36,7 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
         <a
           className="me-4 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
           id="navbarDropdown"
+          aria-label='Language'
           role="button"
           aria-expanded={isDropdownOpen ? "true" : "false"}
           onClick={toggleDropdown}
@@ -84,10 +85,12 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
       </div>
       <div className="flex space-x-2 sm:hidden rounded-full bg-lime-900 rounded-full bg-lime-900 p-3">
         <button
+          aria-label='English'
           onClick={() => handleLanguageSelect('en')}
           className={`flag-icon flag-icon-us w-6 h-6 ${currentLang === 'en' ? 'opacity-100' : 'opacity-50'}`}
         ></button>
         <button
+          aria-label='Português'
           onClick={() => handleLanguageSelect('pt')}
           className={`flag-icon flag-icon-br w-6 h-6 ${currentLang === 'pt' ? 'opacity-100' : 'opacity-50'}`}
         ></button>

@@ -1,24 +1,35 @@
+'use client';
+import { useEffect } from 'react';
 import { Poppins } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-import { DataContextProvider } from './context/DataContextProvider';
+import { DataContextProvider, useData } from './context/DataContextProvider';
 import 'flag-icon-css/css/flag-icons.min.css';
+import 'src/styles/index.css';
 import TranslationProvider from './providers/TranslationProvider';
-import Navbar from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import '../styles/index.css';
-import '../../lib/i18n';
+import Navbar from '@/src/components/Header/Header';
+import Footer from '@/src/components/Footer/Footer';
+import 'lib/i18n';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-poppins'
-})
+  variable: '--font-poppins',
+});
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+function LayoutContent({ children }: { children: React.ReactNode }) {
+  const { data } = useData();
+  const isLoading = !data;
+
+  return (
+    <>
+      {!isLoading && <Navbar />}
+      {children}
+      {!isLoading && <Footer />}
+    </>
+  );
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt" suppressHydrationWarning>
       <head>
@@ -35,14 +46,15 @@ export default function RootLayout({
         <meta name="application-name" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>
+        <link rel="preload" href="/images/homePrimaryImage.png" as="image" type="image/png" />
       </head>
-      <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidde`}>
+      <body
+        className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}
+      >
         <DataContextProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <TranslationProvider>
-              <Navbar />
-              {children}
-              <Footer />
+              <LayoutContent>{children}</LayoutContent>
             </TranslationProvider>
           </ThemeProvider>
         </DataContextProvider>
