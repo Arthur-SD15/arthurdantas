@@ -1,4 +1,88 @@
 {
+    "education": {
+        "en": [
+            {
+                "title": "Bachelor's Degree in Software Engineering",
+                "institution": "Federal University of Mato Grosso do Sul | UFMS",
+                "startDate": "March 2024",
+                "endDate": "Present",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            },
+            {
+                "title": "Technical in Informatics",
+                "institution": "Federal Institute of Mato Grosso do Sul | IFMS",
+                "startDate": "February 2021",
+                "endDate": "December 2023",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            }
+        ],
+        "pt": [
+            {
+                "title": "Bacharelado em Engenharia de Software",
+                "institution": "Universidade Federal de Mato Grosso do Sul | UFMS",
+                "startDate": "Março 2024",
+                "endDate": "Presente",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            },
+            {
+                "title": "Técnico em Informática",
+                "institution": "Instituto Federal de Mato Grosso do Sul | IFMS",
+                "startDate": "Feveiro 2021",
+                "endDate": "Dezembro 2023",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            }
+        ]
+    },
+    "experience": {
+        "en": [
+            {
+                "position": "Full Stack Software Engineer",
+                "company": "Mato Grosso do Sul Technology, Engineering, and Science Fair | FETECMS",
+                "startDate": "April 2024",
+                "endDate": "December 2024",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            },
+            {
+                "position": "Researcher",
+                "company": "Foundation for Support to the Development of Teaching, Science and Technology of the State of Mato Grosso do Sul | FUNDECT",
+                "startDate": "August 2022",
+                "endDate": "January 2024",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            }
+        ],
+        "pt": [
+            {
+                "position": "Engenharia de Software Full Stack",
+                "company": "Feira de Tecnologias, Engenharias e Ciências de Mato Grosso do Sul | FETECMS",
+                "startDate": "Abril 2024",
+                "endDate": "Dezembro 2024",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            },
+            {
+                "position": "Pesquisador",
+                "company": "Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul | FUNDECT",
+                "startDate": "Agosto 2022",
+                "endDate": "Janeiro 2024",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+            }
+        ]
+    },
+    "routes": {
+        "en": [
+            { "name": "Home", "path": "/" },
+            { "name": "Career", "path": "/career" },
+            { "name": "Skills", "path": "/skills" },
+            { "name": "Projects", "path": "/projects" },
+            { "name": "Resume", "path": "/resume" }
+        ],
+        "pt": [
+            { "name": "Início", "path": "/" },
+            { "name": "Carreira", "path": "/career" },
+            { "name": "Habilidades", "path": "/skills" },
+            { "name": "Projetos", "path": "/projects" },
+            { "name": "Resumo", "path": "/resume" }
+        ]
+    },
     "skills": {
         "languages": [
             { "name": "JavaScript", "special": true },
@@ -79,22 +163,6 @@
                 "icon": "FaInstagram",
                 "link": "https://www.instagram.com/_arthursilva7/"
             }
-        ]
-    },
-    "routes": {
-        "en": [
-            { "name": "Home", "path": "/" },
-            { "name": "Career", "path": "/career" },
-            { "name": "Skills", "path": "/skills" },
-            { "name": "Projects", "path": "/projects" },
-            { "name": "Resume", "path": "/resume" }
-        ],
-        "pt": [
-            { "name": "Início", "path": "/" },
-            { "name": "Carreira", "path": "/career" },
-            { "name": "Habilidades", "path": "/skills" },
-            { "name": "Projetos", "path": "/projects" },
-            { "name": "Resumo", "path": "/resume" }
         ]
     }
 }

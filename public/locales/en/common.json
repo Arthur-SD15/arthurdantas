@@ -1,8 +1,13 @@
 {
+    "Experience": "Experience",
+    "Education": "Education",
+    
     "iam": "I am",
     "connect": "Connect with me",
     "visit-career": "Visit my career",
     "visit-skill": "Visit my skills",
+    "career-primary-section-title": "My Path in Software Development",
+    "career-primary-section-paragraph": "Explore my academic and professional journey, along with the experiences and achievements in the area of Software Development and Web Applications, through which I have passed, from acting as a researcher in the area of Software Engineering to my participation in the third largest fair in Brazil, impacting a large number of people. During this journey, I acquired vast knowledge in different languages, frameworks, and methodologies.",
     "home-primary-section-title-1": "Hi!",
     "home-primary-section-title-2": "I'm Arthur Dantas",
     "home-second-section-title": "Full Stack Software Engineer",

@@ -104,3 +104,53 @@ html {
 .dot:nth-child(3) {
   animation-delay: 0.3s;
 }
+
+.mouse-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -25px);
+  display: inline-block;
+  height: 36px;
+}
+
+.light .mouse-icon {
+  color: black;
+}
+
+.dark .mouse-icon {
+  color: white;
+}
+
+@media (max-width: 1023px) {
+  .mouse-icon {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .mouse-icon {
+    height: 40px;
+    transform: translate(-50%, -40px);
+  }
+}
+
+.mouse-icon svg {
+  height: 100%;
+  width: auto;
+}
+
+.mouse-icon svg .cursor {
+  animation: mouseCursorNew 1.6s infinite ease-in-out;
+}
+
+@keyframes mouseCursorNew {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}

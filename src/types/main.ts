@@ -1,7 +1,23 @@
-type skillsCategory = {
+type education = {
+    institution: string,
+    title: string,
+    desc: string,
+    startDate: string,
+    endDate: string,
+}
+
+type experience = {
+    company: string,
+    position: string,
+    startDate: string,
+    endDate: string,
+    desc: string
+}
+
+type routes = {
     name: string;
-    special: boolean;
-};
+    path: string;
+}
 
 type skills = {
     languages: skillsCategory[];
@@ -14,6 +30,11 @@ type skills = {
     };
 };
 
+type skillsCategory = {
+    name: string;
+    special: boolean;
+};
+
 type social = {
     name: string,
     icon: string,
@@ -21,21 +42,24 @@ type social = {
     type: "general" | "specific"
 }
 
-type routes = {
-    name: string;
-    path: string;
-}
-
 type data = {
+    education: {
+        en: education[];
+        pt: education[];
+    };
+    experience: {
+        en: experience[];
+        pt: experience[];
+    };
+    routes: {
+        en: routes[];
+        pt: routes[];
+    };
     skills: skills;
     socials: {
         general: social[];
         specific: social[];
-    },
-    routes: {
-        en: routes[],
-        pt: routes[]
-    }
+    };
 }
 
-export type { data, routes, social, skills, skillsCategory };
+export type { education, experience, routes, skills, skillsCategory, social, data };

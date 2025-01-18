@@ -1,8 +1,14 @@
 {   
+    "Experience": "Experiência",
+    "Education": "Educação",
+    
     "iam": "Sou",
     "connect": "Conecte-se comigo",
     "visit-career": "Visite minha carreira",
     "visit-skill": "Visite minhas habilidades",
+
+    "career-primary-section-title": "Meu Caminho no Desenvolvimento de Software",
+    "career-primary-section-paragraph": "Explore minha trajetória acadêmica e profissional, juntamente com as experiências e conquistas na área de Desenvolvimento de Software e Aplicações Web, pelas quais passei, desde a atuação como pesquisador na área de Engenharia de Software até minha participação na terceira maior feira do Brasil, impactando um grande número de pessoas. Durante essa trajetória, adquiri um vasto conhecimento em diferentes linguagens, frameworks e metodologias.",
     "home-primary-section-title-1": "Olá!",
     "home-primary-section-title-2": "Me chamo Arthur Dantas",
     "home-second-section-title": "Engenheiro de Software Full Stack",
