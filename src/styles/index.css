@@ -3,45 +3,45 @@
 @tailwind utilities;
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
   
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
     
 ::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #6565656a;
+  background-color: #6565656a;
 }
   
 .scroll-hide::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .custom-line-height {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 @media (max-width: 375px) {
-    .section-responsiveness {
-        padding-top: 5vh;
-        height: 120vh;
-        overflow-x: hidden;
-    }
+  .section-responsiveness {
+    padding-top: 5vh;
+    height: 120vh;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 663px) and (max-height: 665px) {
-    .section-responsiveness{
-        padding-top: 5vh;
-        height: 120vh;
-        overflow-x: hidden;
-    }
+  .section-responsiveness{
+    padding-top: 5vh;
+    height: 120vh;
+    overflow-x: hidden;
+  }
 }
 
 @layer utilities {

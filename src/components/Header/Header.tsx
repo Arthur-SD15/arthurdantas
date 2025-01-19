@@ -101,6 +101,8 @@ const Navbar = () => {
         routes={data?.routes[currentLang] || []} 
         currentLang={currentLang}
         onLanguageChange={handleLanguageChange}
+        pdfEn={pdfEn}
+        pdfPt={pdfPt}
       />
     </header>
   );

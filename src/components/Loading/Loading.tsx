@@ -1,4 +1,4 @@
-export default function Loading() {
+const Loading = () => {
   return(
     <div className='fixed inset-0 flex items-center justify-center z-50 bg-transparent'>
       <div className='relative p-4'>
@@ -11,3 +11,5 @@ export default function Loading() {
     </div>
   );
 }
+
+export default Loading;

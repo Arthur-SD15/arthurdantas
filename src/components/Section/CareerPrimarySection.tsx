@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { useTheme } from "next-themes";
 import CareerPrimaryImage from "../Images/CareerPrimaryImage";
 
-export default function CareerPrimarySection() {
+const CareerPrimarySection = () => {
     const { t, i18n } = useTranslation("common");
     const { theme } = useTheme();
 
@@ -30,7 +30,7 @@ export default function CareerPrimarySection() {
                                 aria-label="Baixar PDF"
                                 className="flex flex-row justify-center items-center mt-4 px-6 py-3 gap-4 w-full h-[34px] bg-lime-900 rounded-[16px] border-none"
                             >
-                                <span className="text-sm font-medium flex items-center  text-white">
+                                <span className="text-sm font-medium flex items-center text-white">
                                     Download CV 
                                 </span>
                             </button>
@@ -67,3 +67,5 @@ export default function CareerPrimarySection() {
         </div>
     );
 }
+
+export default CareerPrimarySection;

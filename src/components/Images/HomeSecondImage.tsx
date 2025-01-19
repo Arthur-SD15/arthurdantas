@@ -1,4 +1,4 @@
-export default function HomeSecondImage() {
+const HomeSecondImage = () => {
     return (
         <div className="relative w-[60%] h-[60%] max-w-[396px] max-h-[396px] hover:opacity-90">
             <div className="absolute w-[396px] h-[396px] bg-[url('/images/backgroundPrimary.png')] bg-cover bg-center top-[30%] left-[-40%] hidden lg:block"></div>
@@ -8,3 +8,5 @@ export default function HomeSecondImage() {
         </div>
     );
 }
+
+export default HomeSecondImage;

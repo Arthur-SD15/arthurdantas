@@ -11,10 +11,10 @@ interface Props {
 
 const Home = ({ data }: Props) => {
     const combinedSkills = [
-        ...data.skills.languages,
-        ...data.skills.frameworks,
-        ...data.skills.databases,
-        ...data.skills.tools,
+        ...(data.skills?.languages || []),
+        ...(data.skills?.frameworks || []),
+        ...(data.skills?.databases || []),
+        ...(data.skills?.tools || []),
     ]
 
     return (

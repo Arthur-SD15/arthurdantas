@@ -1,10 +1,10 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
 import { useData } from '@/app/context/DataContextProvider';
 import Link from 'next/link';
 import Logo from '../Logo';
-import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const { t, i18n } = useTranslation('common');

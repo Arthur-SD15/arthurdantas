@@ -1,11 +1,11 @@
-'use client';
-import React from 'react';
+import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { social } from '@/src/types/main';
+import { memo } from 'react';
 import Mode from './Mode';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
-const Socials = ({ socials }: { socials: social[] }) => {
+
+const Socials = memo(({ socials }: { socials: social[] }) => {
     return (
         <section 
             id="socials" 
@@ -25,6 +25,6 @@ const Socials = ({ socials }: { socials: social[] }) => {
             <Mode />
         </section>
     );
-};
+});
 
 export default Socials;

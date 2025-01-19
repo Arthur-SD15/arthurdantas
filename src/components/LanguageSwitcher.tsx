@@ -1,4 +1,5 @@
 'use client';
+import { memo } from 'react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -99,4 +100,4 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
   );
 };
 
-export default LanguageSwitcher;
+export default memo(LanguageSwitcher);

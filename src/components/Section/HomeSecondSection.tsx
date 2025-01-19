@@ -4,7 +4,7 @@ import { IoMdSend } from "react-icons/io";
 import Link from 'next/link';
 import HomeSecondImage from '../Images/HomeSecondImage';
 
-export default function HomeSecondSection() {
+const HomeSecondSection = () => {
     const { t } = useTranslation('common');
 
     return (
@@ -48,3 +48,5 @@ export default function HomeSecondSection() {
         </div>
     );
 }
+
+export default HomeSecondSection;

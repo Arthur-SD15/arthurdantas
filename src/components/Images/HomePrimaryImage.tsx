@@ -1,4 +1,4 @@
-export default function HomePrimaryImage() {
+const HomePrimaryImage = () => {
     return (
         <div className="relative w-[75%] max-w-[260px] h-[75%] max-h-[350px] hover:opacity-90">
             <div className="absolute w-full h-full bg-gradient-to-br from-gray-400 to-gray-300 dark:from-gray-800 dark:to-gray-600 rounded-[32px] rotate-[57.15deg] transition-opacity duration-200 hover:bg-opacity-50"></div>
@@ -7,3 +7,5 @@ export default function HomePrimaryImage() {
         </div>
     );
 }
+
+export default HomePrimaryImage;

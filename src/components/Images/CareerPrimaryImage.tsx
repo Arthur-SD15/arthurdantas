@@ -1,4 +1,4 @@
-export default function CareerPrimaryImage() {
+const CareerPrimaryImage = () => {
     return(
         <div className="relative w-[75%] max-w-[260px] h-[75%] max-h-[350px] hover:opacity-90">
             <div className="absolute w-[396px] h-[396px] bg-[url('/images/backgroundThird.png')] bg-cover bg-center top-[30%] left-[-40%] hidden lg:block"></div>
@@ -7,3 +7,5 @@ export default function CareerPrimaryImage() {
         </div>
     )
 }
+
+export default CareerPrimaryImage;

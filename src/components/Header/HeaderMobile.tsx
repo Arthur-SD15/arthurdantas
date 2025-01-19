@@ -1,7 +1,8 @@
+import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { memo } from 'react';
 import Link from 'next/link';
 import Mode from '../Mode';
-import { useEffect, useState } from 'react';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 interface HeaderMobileProps {
@@ -10,9 +11,11 @@ interface HeaderMobileProps {
   routes: Array<{ name: string; path: string }>;
   currentLang: 'en' | 'pt';
   onLanguageChange: (lang: 'en' | 'pt') => void;
+  pdfEn: string;
+  pdfPt: string;
 }
 
-const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLanguageChange }: HeaderMobileProps) => {
+const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLanguageChange, pdfEn, pdfPt }: HeaderMobileProps) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -24,7 +27,6 @@ const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLangua
   }
 
   const closeMenu = () => {
-    // Fechar o menu sem animação ou delay
     setIsMenuOpen(false);
   };
 
@@ -37,18 +39,15 @@ const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLangua
     }),
   };
 
-  const pdfEn = '/pdfs/CV_ArthurSD(en).pdf';
-  const pdfPt = '/pdfs/CV_ArthurSD(pt).pdf';
-
   return (
     <AnimatePresence>
       {isMenuOpen && (
         <motion.div
           className="fixed inset-0 z-40 bg-black bg-opacity-60 backdrop-blur-lg flex flex-col items-center justify-center gap-8 sm:hidden"
-          initial={{ opacity: 0, x: '-100%' }} // Animação de entrada
+          initial={{ opacity: 0, x: '-100%' }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 0 }} // Sem animação de saída
-          transition={{ duration: 0 }} // Sem animação na saída
+          exit={{ opacity: 0, x: 0 }}
+          transition={{ duration: 0 }}
         >
           <motion.div
             className="flex flex-col items-center gap-6"
@@ -97,4 +96,4 @@ const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLangua
   );
 };
 
-export default HeaderMobile;
+export default memo(HeaderMobile);

@@ -9,7 +9,7 @@ interface HomeThirdSectionProps {
     };
 }
 
-export default function HomeThirdSection({ softSkills }: HomeThirdSectionProps) {
+const HomeThirdSection = ({ softSkills }: HomeThirdSectionProps) => {
     const { t, i18n } = useTranslation('common');
 
     const filterSoftSkills = i18n.language === 'pt' 
@@ -43,3 +43,5 @@ export default function HomeThirdSection({ softSkills }: HomeThirdSectionProps) 
         </div>
     );
 }
+
+export default HomeThirdSection;

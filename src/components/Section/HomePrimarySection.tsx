@@ -3,7 +3,7 @@ import { skillsCategory } from "@/src/types/main";
 import { useTranslation } from 'next-i18next';
 import HomePrimaryImage from "../Images/HomePrimaryImage";
 
-export default function HomePrimarySection({ skills }: { skills: skillsCategory[] }) {
+const HomePrimarySection = ({ skills }: { skills: skillsCategory[] }) => {
     const { t } = useTranslation('common');
 
     return (
@@ -47,3 +47,5 @@ export default function HomePrimarySection({ skills }: { skills: skillsCategory[
         </div>
     );
 }
+
+export default HomePrimarySection;

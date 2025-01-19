@@ -1,5 +1,5 @@
 import { experience, education } from "@/src/types/main"
-import { useState, useEffect } from "react"
+import { memo, useState, useEffect } from "react"
 import { useTranslation } from 'next-i18next';
 import ExperienceCard from "../ExperienceCard"
 
@@ -10,7 +10,6 @@ interface Props {
 
 const CareerSecondSecion = ({ experienceData, educationData }: Props) => {
     const { t } = useTranslation("common");
-
     const [show, setShow] = useState("Experience")
     const [experiences, setExperiences] = useState([...experienceData])
     const [educations, setEducations] = useState([...educationData])
@@ -34,7 +33,6 @@ const CareerSecondSecion = ({ experienceData, educationData }: Props) => {
                   >
                     {t(e)}
                   </button>
-                  
                 ))}
             </div>
             <div className="lg:container sm:mx-4 lg:mx-auto lg:w-5/6 2xl:w-2/3">
@@ -51,4 +49,4 @@ const CareerSecondSecion = ({ experienceData, educationData }: Props) => {
     )
 }
 
-export default CareerSecondSecion
+export default memo(CareerSecondSecion);
