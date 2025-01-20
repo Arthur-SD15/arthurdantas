@@ -1,6 +1,6 @@
 import { MdSchool, MdWork } from 'react-icons/md'
-import { memo } from 'react'
-
+import { memo } from 'react';
+import { Icon } from '@iconify-icon/react';
 interface ExperienceProps {
   index: number,
   startDate: string,
@@ -10,9 +10,10 @@ interface ExperienceProps {
   desc: string,
   institution: string,
   title: string,
+  icons: { icon: string }[]
 }
 
-const ExperienceCard = memo(({ index, startDate, endDate, company, position, desc, institution, title }: ExperienceProps) => {
+const ExperienceCard = memo(({ index, startDate, endDate, company, position, desc, institution, title, icons }: ExperienceProps) => {
   return (
     <div className={`mb-6 md:mb-8 flex md:justify-between items-center w-full ${index % 2 === 0 ? 'md:flex-row-reverse left-timeline' : 'right-timeline'}`}>
       <div className="order-1 md:w-6/12"></div>
@@ -35,9 +36,14 @@ const ExperienceCard = memo(({ index, startDate, endDate, company, position, des
         <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60 overflow-hidden break-words">
           {desc}
         </p>
+        <div className="flex gap-2 mt-2">
+          {icons && icons.length > 0 && icons.map((iconObj, index) => (
+            <Icon key={index} icon={iconObj.icon} width={24} height={24} />
+          ))}
+        </div>
       </div>
     </div>
-  )
+  );
 });
 
 export default ExperienceCard;

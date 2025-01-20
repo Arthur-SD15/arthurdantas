@@ -1,5 +1,4 @@
 'use client';
-import { useEffect } from 'react';
 import { Poppins } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
 import { DataContextProvider, useData } from './context/DataContextProvider';
@@ -47,6 +46,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>
         <link rel="preload" href="/images/homePrimaryImage.png" as="image" type="image/png" />
+        <link rel="preload" href="/images/careerPrimaryImage.webp" as="image" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" as="font" type="font/woff2" />
       </head>
       <body
         className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}

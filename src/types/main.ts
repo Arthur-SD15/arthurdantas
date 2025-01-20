@@ -4,6 +4,7 @@ type education = {
     desc: string,
     startDate: string,
     endDate: string,
+    icons: string[]
 }
 
 type experience = {
@@ -12,6 +13,7 @@ type experience = {
     startDate: string,
     endDate: string,
     desc: string
+    icons: string[]
 }
 
 type routes = {

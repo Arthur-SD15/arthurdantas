@@ -6,14 +6,28 @@
                 "institution": "Federal University of Mato Grosso do Sul | UFMS",
                 "startDate": "March 2024",
                 "endDate": "Present",
-                "desc": "-"
+                "desc": "-",
+                "icons": []
             },
             {
                 "title": "Technical in Informatics",
                 "institution": "Federal Institute of Mato Grosso do Sul | IFMS",
                 "startDate": "February 2021",
                 "endDate": "December 2023",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "I completed a technical high school program in informatics at the Federal Institute of Mato Grosso do Sul. During this period, I gained knowledge about hardware and its functionality, as well as basic networking fundamentals. Throughout this training, I particularly deepened my knowledge in programming, starting with HTML and CSS, along with libraries such as Bootstrap and Tailwind. Later, I advanced to learning JavaScript, Node.js, React, Next.js, and Databases, gaining experience in both client-side and server-side programming. I also learned architectural patterns like MVC and HTTP methods, as well as learn into Express and encryption. Over the years, I developed extensive experience in version control using Git and GitHub, which was further enhanced through the implementation of practical projects.",
+                "icons": [
+                    { "icon": "skill-icons:html" },
+                    { "icon": "skill-icons:css" },
+                    { "icon": "skill-icons:bootstrap" },
+                    { "icon": "skill-icons:tailwindcss-dark" },
+                    { "icon": "skill-icons:javascript" },
+                    { "icon": "skill-icons:nodejs-dark" },
+                    { "icon": "skill-icons:nextjs-dark" },
+                    { "icon": "skill-icons:react-dark" },
+                    { "icon": "skill-icons:postgresql-dark" },
+                    { "icon": "skill-icons:git" },
+                    { "icon": "skill-icons:github-dark" }
+                ]
             }
         ],
         "pt": [
@@ -22,14 +36,28 @@
                 "institution": "Universidade Federal de Mato Grosso do Sul | UFMS",
                 "startDate": "Março 2024",
                 "endDate": "Presente",
-                "desc": "-"
+                "desc": "-",
+                "icons": []
             },
             {
                 "title": "Técnico em Informática",
                 "institution": "Instituto Federal de Mato Grosso do Sul | IFMS",
                 "startDate": "Feveiro 2021",
                 "endDate": "Dezembro 2023",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "Fiz o ensino médio profissionalizante em Técnico em Informática no Instituto Federal de Mato Grosso do Sul. Ao longo desse período, adquiri conhecimento sobre hardware e seu funcionamento, além de fundamentos básicos em estrutura de redes. Durante essa formação, aprofundei-me especialmente em programação, iniciando com HTML e CSS, além de bibliotecas como Bootstrap e Tailwind. Posteriormente, evoluí para o aprendizado de JavaScript, Node.js, React, Next.js e Banco de Dados, adquirindo experiência tanto na programação do lado do cliente quanto no lado do servidor. Aprendi também padrões de arquitetura como MVC e métodos HTTP, além de me aprofundar em Express e criptografia. Ao longo desses anos, desenvolvi uma vasta experiência em versionamento de código com Git e GitHub, que foi aprimorada com a implementação de projetos práticos.",
+                "icons": [
+                    { "icon": "skill-icons:html" },
+                    { "icon": "skill-icons:css" },
+                    { "icon": "skill-icons:bootstrap" },
+                    { "icon": "skill-icons:tailwindcss-dark" },
+                    { "icon": "skill-icons:javascript" },
+                    { "icon": "skill-icons:nodejs-dark" },
+                    { "icon": "skill-icons:nextjs-dark" },
+                    { "icon": "skill-icons:react-dark" },
+                    { "icon": "skill-icons:postgresql-dark" },
+                    { "icon": "skill-icons:git" },
+                    { "icon": "skill-icons:github-dark" }
+                ]
             }
         ]
     },
@@ -40,30 +68,50 @@
                 "company": "Mato Grosso do Sul Technology, Engineering, and Science Fair | FETECMS",
                 "startDate": "April 2024",
                 "endDate": "December 2024",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "The Mato Grosso do Sul Technology, Engineering, and Science Fair is the largest in the Midwest and the third in Brazil. As a Full-Stack Software Engineer on the general committee, I worked in the Systems Directorate. My main responsibilities included process automation, continuous development of new features, and system maintenance. The work aimed to ensure the scalability, integrity, and good usability of the system, applying Software Engineering concepts. I contributed to both front-end and back-end development, using technologies such as Node.js, React, TypeScript, NestJS, and Prisma. During the process, we adopted Clean Architecture. We also worked with Agile Methodology using SCRUM, in addition to making estimates through Planning Poker. The process demonstrated excellent functioning, from project registration to the face-to-face evaluation phase, ensuring fluidity in all stages. As a result, the system demonstrated high efficacy, reflected in a 54% increase in the number of projects registered.",
+                "icons": [
+                    { "icon": "skill-icons:nodejs-dark" },
+                    { "icon": "skill-icons:react-dark" },
+                    { "icon": "skill-icons:tailwindcss-dark" },
+                    { "icon": "skill-icons:nestjs-dark" },
+                    { "icon": "skill-icons:prisma" },
+                    { "icon": "skill-icons:git" },
+                    { "icon": "skill-icons:github-dark" }
+                ]
             },
             {
                 "position": "Researcher",
                 "company": "Foundation for Support to the Development of Teaching, Science and Technology of the State of Mato Grosso do Sul | FUNDECT",
                 "startDate": "August 2022",
                 "endDate": "January 2024",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "With the support of the Foundation for Support to the Development of Teaching, Science and Technology of the State of Mato Grosso do Sul, it was possible to develop a research at the Interdisciplinary Research, Study and Development Center in Information Technology. I acted as a research fellow, in a context of a research directed to the innovation in Software Engineering, addressing the problem of the high degree of abstraction in system modeling through diagrams, especially UML diagrams. This characteristic makes it difficult to include people with visual impairments in Software Engineering, as screen readers cannot adequately interpret these CASE tools. Faced with this specific issue in Software Engineering, I as a researcher, in addition to delving into topics on system modeling, dedicated myself to solving this problem, developing a 3D didactic material that makes the process less abstract and more tangible, thus promoting inclusion and innovation.",
+                "icons": []
             }
         ],
         "pt": [
             {
-                "position": "Engenharia de Software Full Stack",
+                "position": "Engenheiro de Software Full Stack",
                 "company": "Feira de Tecnologias, Engenharias e Ciências de Mato Grosso do Sul | FETECMS",
                 "startDate": "Abril 2024",
                 "endDate": "Dezembro 2024",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "A Feira de Tecnologias, Engenharias e Ciências de Mato Grosso do Sul é a maior do Centro-Oeste e a terceira do Brasil. Como Engenheiro de Software Full-Stack na comissão geral, trabalhei na Diretoria de Sistemas. Minhas principais responsabilidades incluíram a automatização de processos, o desenvolvimento contínuo de novas funcionalidades e a manutenção do sistema. O trabalho visou garantir a escalabilidade, integridade e a boa usabilidade do sistema, aplicando conceitos de Engenharia de Software. Contribuí tanto no desenvolvimento front-end quanto no back-end, utilizando tecnologias como Node.js, React, TypeScript, NestJS e Prisma. Durante o processo, adotamos a Clean Architecture. Também trabalhamos com Metodologia Ágil usando SCRUM, além de realizar estimativas por meio do Planning Poker. O processo demonstrou ótimo funcionamento, desde a inscrição dos projetos até a fase presencial de avaliação, garantindo fluidez em todas as etapas. Como resultado, o sistema demonstrado de alta eficácia, refletiu em um aumento de 54% no número de projetos inscritos.",
+                "icons": [
+                    { "icon": "skill-icons:nodejs-dark" },
+                    { "icon": "skill-icons:react-dark" },
+                    { "icon": "skill-icons:tailwindcss-dark" },
+                    { "icon": "skill-icons:nestjs-dark" },
+                    { "icon": "skill-icons:prisma" },
+                    { "icon": "skill-icons:git" },
+                    { "icon": "skill-icons:github-dark" }
+                ]
             },
             {
                 "position": "Pesquisador",
                 "company": "Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul | FUNDECT",
                 "startDate": "Agosto 2022",
                 "endDate": "Janeiro 2024",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi sit amet nunc tincidunt aliquam. Nullam nec nunc nec nunc tincidunt aliquam. Nullam nec nunc nec nunc"
+                "desc": "Com o apoio da Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul, foi possível desenvolver uma pesquisa no Núcleo Interdisciplinar de Pesquisa, Estudo e Desenvolvimento em Tecnologia da Informação. Atuei como bolsista pesquisador, em um contexto de uma pesquisa direcionada ao âmbito da inovação na Engenharia de Software, abordando a problemática do alto grau de abstração na modelagem de sistemas por meio de diagramas, especialmente os diagramas da UML. Essa característica dificulta a inclusão de pessoas com deficiência visual na Engenharia de Software, pois os leitores de tela não conseguem interpretar adequadamente essas ferramentas CASE. Diante dessa questão específica da Engenharia de Software, eu como pesquisador, além de me aprofundar em temas sobre a modelagem de sistemas, dediquei-me a resolver essa problemática, desenvolvendo um material didático 3D que torna o processo menos abstrato e mais tangível, promovendo, assim, a inclusão e inovação.",
+                "icons": []
             }
         ]
     },

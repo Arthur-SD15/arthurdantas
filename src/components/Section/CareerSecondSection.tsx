@@ -1,7 +1,7 @@
 import { experience, education } from "@/src/types/main"
 import { memo, useState, useEffect } from "react"
 import { useTranslation } from 'next-i18next';
-import ExperienceCard from "../ExperienceCard"
+import ExperienceCard from "../ExperienceCard";
 
 interface Props {
     experienceData: experience[]
