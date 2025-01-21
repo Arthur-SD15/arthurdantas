@@ -11,7 +11,7 @@ const HomePrimarySection = ({ skills }: { skills: skillsCategory[] }) => {
             <div className="w-10/12 mx-auto py-3 flex flex-col md:flex-col lg:flex-row items-center justify-between h-[100vh] custom-vh-height dark:bg-grey-900 section-responsiveness">
                 <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-full flex items-center justify-start">
                     <div className="flex flex-col items-start justify-center text-left">
-                        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 pt-5">
                             {t('home-primary-section-title-1')} {' '}
                             <span className="text-3xl animate-tchau inline-block">👋</span>
                             <br />{t('home-primary-section-title-2')} 

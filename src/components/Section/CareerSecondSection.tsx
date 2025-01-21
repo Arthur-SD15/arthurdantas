@@ -23,7 +23,7 @@ const CareerSecondSecion = ({ experienceData, educationData }: Props) => {
 
     return (
         <div className="animate-rise-from-ground">
-            <div className="w-fit mx-auto mt-6 p-2 rounded-md flex gap-2 items-center bg-white dark:bg-[#1F1F1F80] shadow-md">
+            <div className="w-fit mx-auto mt-8 p-2 rounded-md flex gap-2 items-center bg-white dark:bg-[#1F1F1F80] shadow-md">
                 {['Experience', 'Education'].map((e, i) => (
                     <button
                     key={i}

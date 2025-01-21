@@ -15,8 +15,11 @@ const HomeSecondSection = () => {
                 </div>
                 <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-full flex items-center justify-start">
                     <div className="flex flex-col items-start justify-center text-left">
-                        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 hidden md:block">
                             {t('home-second-section-title')}
+                        </h1>
+                        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 block md:hidden">
+                            {t("Software-Engineer")}
                         </h1>
                         <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60 overflow-hidden break-words">
                             {t('home-second-section-paragraph')}

@@ -36,7 +36,7 @@ const ExperienceCard = memo(({ index, startDate, endDate, company, position, des
         <p className="text-[12px] font-medium text-justify font-[Plus Jakarta Sans], sans-serif text-black/60 dark:text-white/60 overflow-hidden break-words">
           {desc}
         </p>
-        <div className="flex gap-2 mt-2">
+        <div className="flex flex-wrap gap-2 mt-2">
           {icons && icons.length > 0 && icons.map((iconObj, index) => (
             <Icon key={index} icon={iconObj.icon} width={24} height={24} />
           ))}
