@@ -1,4 +1,5 @@
 'use client';
+import { memo } from 'react';
 import { useTranslation } from 'next-i18next';
 import HomeThirdImage from '../Images/HomeThirdImage';
 
@@ -9,7 +10,7 @@ interface HomeThirdSectionProps {
     };
 }
 
-const HomeThirdSection = ({ softSkills }: HomeThirdSectionProps) => {
+const HomeThirdSection = memo(({ softSkills }: HomeThirdSectionProps) => {
     const { t, i18n } = useTranslation('common');
 
     const filterSoftSkills = i18n.language === 'pt' 
@@ -45,6 +46,6 @@ const HomeThirdSection = ({ softSkills }: HomeThirdSectionProps) => {
             </div>
         </div>
     );
-}
+});
 
 export default HomeThirdSection;

@@ -1,6 +1,9 @@
 'use client';
 import { useTheme } from 'next-themes';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import dynamic from 'next/dynamic';
+
+const FiSun = dynamic(() => import('react-icons/fi').then(mod => mod.FiSun));
+const FiMoon = dynamic(() => import('react-icons/fi').then(mod => mod.FiMoon));
 
 const Mode = () => {
     const { theme, setTheme } = useTheme();

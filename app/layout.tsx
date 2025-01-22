@@ -1,12 +1,12 @@
 'use client';
 import { Poppins } from 'next/font/google';
+import dynamic from 'next/dynamic';
 import { ThemeProvider } from 'next-themes';
-import { DataContextProvider, useData } from './context/DataContextProvider';
-import 'flag-icon-css/css/flag-icons.min.css';
-import 'src/styles/index.css';
+import { DataContextProvider } from './context/DataContextProvider';
 import TranslationProvider from './providers/TranslationProvider';
 import Navbar from '@/src/components/Header/Header';
 import Footer from '@/src/components/Footer/Footer';
+import 'src/styles/index.css';
 import 'lib/i18n';
 
 const poppins = Poppins({
@@ -16,14 +16,11 @@ const poppins = Poppins({
 });
 
 function LayoutContent({ children }: { children: React.ReactNode }) {
-  const { data } = useData();
-  const isLoading = !data;
-
   return (
     <>
-      {!isLoading && <Navbar />}
+      <Navbar />
       {children}
-      {!isLoading && <Footer />}
+      <Footer />
     </>
   );
 }
@@ -45,9 +42,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="application-name" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>
-        <link rel="preload" href="/images/homePrimaryImage.png" as="image" type="image/png" />
-        <link rel="preload" href="/images/careerPrimaryImage.webp" as="image" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" as="font" type="font/woff2" />
       </head>
       <body
         className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}

@@ -1,8 +1,11 @@
 'use client';
 import { useTranslation } from 'next-i18next';
-import { IoMdSend } from "react-icons/io";
 import Link from 'next/link';
 import HomeSecondImage from '../Images/HomeSecondImage';
+import dynamic from 'next/dynamic';
+
+const IoMdSend = dynamic(() => import('react-icons/io').then(mod => mod.IoMdSend));
+
 
 const HomeSecondSection = () => {
     const { t } = useTranslation('common');

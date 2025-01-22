@@ -1,10 +1,16 @@
 'use client';
-import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
 import { useData } from '@/app/context/DataContextProvider';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Logo from '../Logo';
+
+const FaLinkedin = dynamic(() => import('react-icons/fa').then(mod => mod.FaLinkedin));
+const FaGithub = dynamic(() => import('react-icons/fa').then(mod => mod.FaGithub));
+const FaGraduationCap = dynamic(() => import('react-icons/fa').then(mod => mod.FaGraduationCap));
+const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram));
+const FaEnvelope = dynamic(() => import('react-icons/fa').then(mod => mod.FaEnvelope));
 
 const Footer = () => {
   const { t, i18n } = useTranslation('common');

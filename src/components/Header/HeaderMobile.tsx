@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useCallback, memo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { memo } from 'react';
 import Link from 'next/link';
 import Mode from '../Mode';
 import LanguageSwitcher from '../LanguageSwitcher';
@@ -15,20 +14,10 @@ interface HeaderMobileProps {
   pdfPt: string;
 }
 
-const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLanguageChange, pdfEn, pdfPt }: HeaderMobileProps) => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const closeMenu = () => {
+const HeaderMobile = memo(({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLanguageChange, pdfEn, pdfPt }: HeaderMobileProps) => {
+  const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
-  };
+  }, [setIsMenuOpen]);
 
   const navigationVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -38,6 +27,8 @@ const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLangua
       transition: { delay: custom, duration: 0.3 },
     }),
   };
+
+  if (!isMenuOpen) return null;
 
   return (
     <AnimatePresence>
@@ -94,6 +85,6 @@ const HeaderMobile = ({ isMenuOpen, setIsMenuOpen, routes, currentLang, onLangua
       )}
     </AnimatePresence>
   );
-};
+});
 
-export default memo(HeaderMobile);
+export default HeaderMobile;

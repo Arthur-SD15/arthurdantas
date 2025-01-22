@@ -1,9 +1,10 @@
 'use client';
+import { memo } from "react";
 import { skillsCategory } from "@/src/types/main";
 import { useTranslation } from 'next-i18next';
 import HomePrimaryImage from "../Images/HomePrimaryImage";
 
-const HomePrimarySection = ({ skills }: { skills: skillsCategory[] }) => {
+const HomePrimarySection = memo(({ skills }: { skills: skillsCategory[] }) => {
     const { t } = useTranslation('common');
 
     return (
@@ -46,6 +47,6 @@ const HomePrimarySection = ({ skills }: { skills: skillsCategory[] }) => {
             <hr className="w-10/12 mx-auto border-t-2 border-gray-400 dark:border-[#151515]" />
         </div>
     );
-}
+});
 
 export default HomePrimarySection;

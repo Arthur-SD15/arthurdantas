@@ -1,7 +1,8 @@
 'use client';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
 interface LanguageSwitcherProps {
   currentLang: 'en' | 'pt';
@@ -20,29 +21,38 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
     }
   }, [currentLang, i18n, onLanguageChange]);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  const toggleDropdown = useCallback(() => {
+    setIsDropdownOpen((prev) => !prev);
+  }, []);
 
-  const handleLanguageSelect = (lang: 'en' | 'pt') => {
-    onLanguageChange(lang);
-    i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang);
-    setIsDropdownOpen(false);
-  };
+  const handleLanguageSelect = useCallback(
+    (lang: 'en' | 'pt') => {
+      onLanguageChange(lang);
+      i18n.changeLanguage(lang);
+      localStorage.setItem('language', lang);
+      setIsDropdownOpen(false);
+    },
+    [onLanguageChange, i18n]
+  );
 
   return (
     <div className="relative ms-4 ml-auto">
       <div className="hidden sm:block">
         <a
-          className="me-4 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+          className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
           id="navbarDropdown"
           aria-label='Language'
           role="button"
           aria-expanded={isDropdownOpen ? "true" : "false"}
           onClick={toggleDropdown}
         >
-          <span className={`flag-icon flag-icon-${currentLang === 'en' ? 'us' : 'br'}`}></span>
+          <Image
+            src={currentLang === 'en' ? '/images/flags/us.svg' : '/images/flags/br.svg'}
+            alt={currentLang === 'en' ? 'English' : 'Português'}
+            width={24}
+            height={16}
+            className="flag-icon"
+          />
           <span className="ps-1 [&>svg]:w-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +76,16 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
               className={`block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-gray-800/25 dark:focus:bg-neutral-800/25 dark:bg-gray-950 ${currentLang === 'en' ? 'bg-zinc-200' : ''}`}
               onClick={() => handleLanguageSelect('en')}
             >
-              <span className="flag-icon flag-icon-us me-2"></span>
-              <span className="me-4">English</span>
+              <div className="flex items-center">
+                <Image
+                  src="/images/flags/us.svg"
+                  alt="English"
+                  width={24}
+                  height={16}
+                  className="mr-2"
+                />
+                <span>English</span>
+              </div>
             </a>
           </li>
           <li>
@@ -78,23 +96,47 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
               className={`block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-gray-800/25 dark:focus:bg-neutral-800/25 dark:bg-gray-950 ${currentLang === 'pt' ? 'bg-zinc-200' : ''}`}
               onClick={() => handleLanguageSelect('pt')}
             >
-              <span className="flag-icon flag-icon-br me-2"></span>
-              Português
+              <div className="flex items-center">
+                <Image
+                  src="/images/flags/br.svg"
+                  alt="Português"
+                  width={24}
+                  height={16}
+                  className="mr-2"
+                />
+                <span>Português</span>
+              </div>
             </a>
           </li>
         </ul>
       </div>
-      <div className="flex space-x-2 sm:hidden rounded-full bg-lime-900 rounded-full bg-lime-900 p-3">
+      <div className="flex space-x-2 sm:hidden rounded-full bg-lime-900 p-3">
         <button
           aria-label='English'
           onClick={() => handleLanguageSelect('en')}
-          className={`flag-icon flag-icon-us w-6 h-6 ${currentLang === 'en' ? 'opacity-100' : 'opacity-50'}`}
-        ></button>
+          className={`w-6 h-6 ${currentLang === 'en' ? 'opacity-100' : 'opacity-50'}`}
+        >
+          <Image
+            src="/images/flags/us.svg"
+            alt="English"
+            width={24}
+            height={16}
+            className="w-full h-full"
+          />
+        </button>
         <button
           aria-label='Português'
           onClick={() => handleLanguageSelect('pt')}
-          className={`flag-icon flag-icon-br w-6 h-6 ${currentLang === 'pt' ? 'opacity-100' : 'opacity-50'}`}
-        ></button>
+          className={`w-6 h-6 ${currentLang === 'pt' ? 'opacity-100' : 'opacity-50'}`}
+        >
+          <Image
+            src="/images/flags/br.svg"
+            alt="Português"
+            width={24}
+            height={16}
+            className="w-full h-full"
+          />
+        </button>
       </div>
     </div>
   );

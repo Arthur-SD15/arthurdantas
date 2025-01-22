@@ -1,9 +1,14 @@
-import { FaLinkedin, FaGithub, FaGraduationCap, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { social } from '@/src/types/main';
 import { memo } from 'react';
+import dynamic from 'next/dynamic';
 import Mode from './Mode';
 import Link from 'next/link';
 
+const FaLinkedin = dynamic(() => import('react-icons/fa').then(mod => mod.FaLinkedin));
+const FaGithub = dynamic(() => import('react-icons/fa').then(mod => mod.FaGithub));
+const FaGraduationCap = dynamic(() => import('react-icons/fa').then(mod => mod.FaGraduationCap));
+const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram));
+const FaEnvelope = dynamic(() => import('react-icons/fa').then(mod => mod.FaEnvelope));
 
 const Socials = memo(({ socials }: { socials: social[] }) => {
     return (
