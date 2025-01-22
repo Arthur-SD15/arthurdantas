@@ -1,25 +1,25 @@
 type education = {
-    institution: string,
-    title: string,
-    desc: string,
-    startDate: string,
-    endDate: string,
-    icons: string[]
-}
+    institution: string;
+    title: string;
+    desc: string;
+    startDate: string;
+    endDate: string;
+    icons: string[];
+};
 
 type experience = {
-    company: string,
-    position: string,
-    startDate: string,
-    endDate: string,
-    desc: string
-    icons: string[]
-}
+    company: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    desc: string;
+    icons: string[];
+};
 
 type routes = {
     name: string;
     path: string;
-}
+};
 
 type skills = {
     languages: skillsCategory[];
@@ -38,11 +38,11 @@ type skillsCategory = {
 };
 
 type social = {
-    name: string,
-    icon: string,
-    link: string,
-    type: "general" | "specific"
-}
+    name: string;
+    icon: string;
+    link: string;
+    type: "general" | "specific";
+};
 
 type data = {
     education: {
@@ -62,6 +62,6 @@ type data = {
         general: social[];
         specific: social[];
     };
-}
+};
 
 export type { education, experience, routes, skills, skillsCategory, social, data };
