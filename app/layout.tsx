@@ -39,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="content-language" content="pt" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="VW0fnVMiIyN_dWTY7-YXBB827TySj-xAfBptrUHI6Ks" />
         <link rel="canonical" href="https://www.arthurdantas.com/" />
         <meta name="application-name" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
