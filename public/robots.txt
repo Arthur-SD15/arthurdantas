@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.arthurdantas.com
+
+# Sitemaps
+Sitemap: https://www.arthurdantas.com/sitemap.xml

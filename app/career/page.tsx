@@ -1,5 +1,4 @@
 'use client';
-import { memo } from 'react';
 import { useData } from '../context/DataContextProvider';
 import { useTranslation } from 'react-i18next';
 import dynamic from 'next/dynamic';
@@ -9,7 +8,7 @@ const Socials = dynamic(() => import('@/src/components/Socials'));
 const CareerPrimarySection = dynamic(() => import('@/src/components/Section/CareerPrimarySection'));
 const CareerSecondSecion = dynamic(() => import('@/src/components/Section/CareerSecondSection'));
 
-const Career = memo(() => {
+const Career = () => {
     const { i18n } = useTranslation();
     const { data } = useData();
 
@@ -28,6 +27,6 @@ const Career = memo(() => {
             )}
         </>
     );
-});
+};
 
 export default Career;

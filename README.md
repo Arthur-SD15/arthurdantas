@@ -1,3 +1,3 @@
-![Banner](/public/images/background-readme.png)
+![Banner](/public/images/readme/background-readme.png)
 
 [...]

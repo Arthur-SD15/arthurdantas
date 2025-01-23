@@ -1,6 +1,5 @@
 'use client';
 import { Poppins } from 'next/font/google';
-import dynamic from 'next/dynamic';
 import { ThemeProvider } from 'next-themes';
 import { DataContextProvider } from './context/DataContextProvider';
 import TranslationProvider from './providers/TranslationProvider';
@@ -27,9 +26,9 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="keywords" content="arthur dantas, portfolio, full stack, desenvolvedor, dev, engenheiro de software, nextjs portfolio, typescript portfolio, portfolio website" />
         <meta property="og:site_name" content="Portfolio | Arthur Dantas" />
         <meta property="og:title" content="Portfolio | Arthur Dantas - Engenheiro de Software" />
@@ -39,6 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="author" content="Arthur Dantas" />
         <meta name="content-language" content="pt" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.arthurdantas.com/" />
         <meta name="application-name" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <meta name="apple-mobile-web-app-title" content="Portfolio | Arthur Dantas - Engenheiro de Software Full Stack" />
         <title>Portfolio | Arthur Dantas - Engenheiro de Software Full Stack</title>

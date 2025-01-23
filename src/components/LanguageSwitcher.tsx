@@ -1,5 +1,5 @@
 'use client';
-import { memo, useCallback } from 'react';
+import { useCallback } from 'react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
@@ -142,4 +142,4 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }: LanguageSwitcherPro
   );
 };
 
-export default memo(LanguageSwitcher);
+export default LanguageSwitcher;

@@ -1,9 +1,8 @@
 'use client';
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, memo } from 'react';
 import { useData } from '@/app/context/DataContextProvider';
 import Link from 'next/link';
 import Logo from '../Logo';
-import { memo } from 'react';
 import LanguageSwitcher from '../LanguageSwitcher';
 import HeaderMobile from './HeaderMobile';
 
