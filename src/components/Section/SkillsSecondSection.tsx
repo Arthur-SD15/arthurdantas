@@ -32,11 +32,11 @@ const SkillsSecondSection = memo(({ webDevelopment, backendDevelopment, language
     }, []);
 
     const renderSkills = (skills: skillsCategory[]) => (
-        <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
+        <div className="flex flex-wrap justify-center gap-4">
             {skills.map((skill) => (
                 <div 
                     key={skill.name} 
-                    className="group relative p-2 flex flex-col items-center justify-center rounded-lg shadow-md bg-white dark:bg-[rgba(42,42,42,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    className="group relative p-2 flex flex-col items-center justify-center rounded-lg shadow-md bg-white dark:bg-[rgba(42,42,42,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-xl dark:hover:bg-[#333333] focus:ring-2 focus:ring-lime-500 transform hover:translate-y-[-4px] hover:shadow-xl"
                 >
                     <div className="w-8 h-8 flex items-center justify-center">
                         <Image 
@@ -44,7 +44,7 @@ const SkillsSecondSection = memo(({ webDevelopment, backendDevelopment, language
                             alt={skill.name} 
                             width={52} 
                             height={52} 
-                            className="transition-transform duration-300 group-hover:scale-110" 
+                            className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" 
                         />
                     </div>
                     <span className="mt-2 text-base font-medium text-center text-gray-600 dark:text-gray-300">{skill.name}</span>
