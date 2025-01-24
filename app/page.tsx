@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, memo } from 'react';
+import { useMemo } from 'react';
 import { useData } from './context/DataContextProvider';
 import Socials from '@/src/components/Socials';
 import HomePrimarySection from '@/src/components/Section/HomePrimarySection';
@@ -12,19 +12,18 @@ const HomePage = () => {
 
   const combinedSkills = useMemo(() => [
     ...(data?.skills?.languages || []),
-    ...(data?.skills?.frameworks || []),
-    ...(data?.skills?.databases || []),
-    ...(data?.skills?.tools || []),
+    ...(data?.skills?.webDevelopment || []),
+    ...(data?.skills?.backendDevelopment || [])
   ], [data?.skills]);
 
   return (
     <>
       {data ? (
         <>
-        <Socials socials={data.socials.specific} />
-        <HomePrimarySection skills={combinedSkills} />
-        <HomeSecondSection />
-        <HomeThirdSection softSkills={data.skills.softSkills} />
+          <Socials socials={data.socials.specific} />
+          <HomePrimarySection skills={combinedSkills} />
+          <HomeSecondSection />
+          <HomeThirdSection softSkills={data.skills.softSkills} />
         </>
       ) : (
         <Loading />
@@ -33,4 +32,4 @@ const HomePage = () => {
   );
 };
 
-export default memo(HomePage);
+export default HomePage;

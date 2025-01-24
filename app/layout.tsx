@@ -29,11 +29,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <meta name="keywords" content="arthur dantas, portfolio, full stack, desenvolvedor, dev, engenheiro de software, nextjs portfolio, typescript portfolio, portfolio website" />
+        <meta name="keywords" content="arthur dantas, portfolio, full stack, desenvolvedor, desenvolvedor full stack, dev, engenheiro de software, nextjs portfolio, typescript portfolio, portfolio website" />
+        <meta property="og:image" content="/images/logoLight.png" />
+        <meta name="twitter:image" content="/images/logoLight.png" />
         <meta property="og:site_name" content="Portfolio | Arthur Dantas" />
         <meta property="og:title" content="Portfolio | Arthur Dantas - Engenheiro de Software" />
-        <meta property="og:description" content="Arthur Dantas, desenvolvedor de software full stack, com experiência na criação de aplicações web, construindo soluções modernas, eficientes e escaláveis." />
-        <meta name="description" content="Portfolio de Arthur Dantas, Engenheiro de Software Full Stack especialista em desenvolvimento web e soluções inovadoras." />
+        <meta property="og:description" content="Arthur Dantas, Desenvolvedor Full Stack, com experiência na criação de aplicações web, construindo soluções modernas, eficientes e escaláveis." />
+        <meta name="description" content="Portfolio de Arthur Dantas, Desenvolvedor Full Stack especialista em desenvolvimento web e soluções inovadoras." />
         <meta property="og:type" content="website" />
         <meta name="author" content="Arthur Dantas" />
         <meta name="content-language" content="pt" />

@@ -9,6 +9,8 @@
 
     "visit-career": "Visit my career",
     "visit-skill": "Visit my skills",
+    "visit-skill-2": "Check out my skills below",
+
     "career-primary-section-title": "My Path in Software Development",
     "career-primary-section-paragraph": "Explore my academic and professional journey, along with the experiences and achievements in the area of Software Development and Web Applications, through which I have passed, from acting as a researcher in the area of Software Engineering to my participation in the third largest fair in Brazil, impacting a large number of people. During this journey, I acquired vast knowledge in different languages, frameworks, and methodologies.",
     "home-primary-section-title-1": "Hi!",
@@ -19,6 +21,12 @@
     "home-primary-section-paragraph": "with a focus on web applications, creating highly usable, efficient, and scalable solutions. I have experience in robust projects with large systems, as well as in smaller initiatives. Applying both academic and practical concepts of Software Engineering in the industry, focusing on agile methodologies to ensure the delivery of high-quality solutions.",
     "home-second-section-paragraph": "I have a technical degree in Computer Technician from the Federal Institute of Mato Grosso do Sul and I am currently a Software Engineering student at the Federal University of Mato Grosso do Sul. Throughout my academic and professional career, I dedicate myself to full stack web development and have participated in several projects, gaining experience in the software area. I always seek to go beyond coding, focusing on problem-solving, requirements analysis, and documentation, essential aspects of Software Engineering.",
     "home-third-section-paragraph": "I have some very strong and noticeable personal characteristics. I am communicative and collaborative with the team, aiming to achieve goals in an agile way, or even collaborating with stakeholders, where communication and collaboration are essential. In addition, I have a critical thinking, always trying to predict events that may affect the course in a certain way. If the problem arises, it must be faced. As a full stack developer, I believe that adaptability is essential, which opens up a range of possibilities, including the willingness to learn continuously.",
+    "skills-primary-section-title": "Explore my Skills",
+    "skills-primary-section-paragraph": "In addition to the hard skills highlighted below, I also have soft skills that I share, such as communication, teamwork, and collaboration. In addition, I have a critical thinking, always trying to predict the next step and its impacts as much as possible, in addition to my adaptability to solve problems. Moving on to hard skills, I try to be as agile as possible and build clean and readable code.",
+    "skills-web-development": "Web Development",
+    "skills-backend-development": "Backend Development",
+    "skills-language": "Languages",
+    "skills-tools": "Tools",
     "footer-message": "Arthur Dantas is a full stack software developer and a Software Engineering student at the Federal University of Mato Grosso do Sul. He resides in Campo Grande, MS, Brazil. He specializes in developing efficient and scalable web applications, focused on providing high-quality and high-performance solutions.",
     "footer-rights": "All rights reserved"
 }

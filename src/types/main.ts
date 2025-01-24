@@ -23,8 +23,9 @@ type routes = {
 
 type skills = {
     languages: skillsCategory[];
-    frameworks: skillsCategory[];
-    databases: skillsCategory[];
+    webDevelopment: skillsCategory[];
+    backendDevelopment: skillsCategory[];
+    devOps: skillsCategory[];
     tools: skillsCategory[];
     softSkills: {
         en: skillsCategory[];
@@ -34,6 +35,7 @@ type skills = {
 
 type skillsCategory = {
     name: string;
+    icon: string;
     special: boolean;
 };
 

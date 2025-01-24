@@ -9,6 +9,8 @@
 
     "visit-career": "Visite minha carreira",
     "visit-skill": "Visite minhas habilidades",
+    "visit-skill-2": "Confira minhas habilidades abaixo",
+
     "career-primary-section-title": "Meu Caminho no Desenvolvimento de Software",
     "career-primary-section-paragraph": "Explore minha trajetória acadêmica e profissional, juntamente com as experiências e conquistas na área de Desenvolvimento de Software e Aplicações Web, pelas quais passei, desde a atuação como pesquisador na área de Engenharia de Software até minha participação na terceira maior feira do Brasil, impactando um grande número de pessoas. Durante essa trajetória, adquiri um vasto conhecimento em diferentes linguagens, frameworks e metodologias.",
     "home-primary-section-title-1": "Olá!",
@@ -19,6 +21,12 @@
     "home-primary-section-paragraph": "com ênfase em aplicações web, criando soluções altamente usáveis, eficientes e escaláveis. Tenho experiência em projetos robustos com sistemas de grande porte, bem como em iniciativas menores. Aplicando tanto conceitos acadêmicos quanto práticos de Engenharia de Software na indústria, com foco em metodologias ágeis para garantir a entrega de soluções de alta qualidade.",
     "home-second-section-paragraph": "Possuo formação técnica em Informática pelo Instituto Federal de Mato Grosso do Sul e atualmente sou estudante de Engenharia de Software na Universidade Federal de Mato Grosso do Sul. Ao longo da minha trajetória acadêmica e profissional, me dedico no desenvolvimento web full stack e participei de diversos projetos, ganhando experiência na área de software. Busco sempre ir além da codificação, focando na resolução de problemas, análise de requisitos e documentação, aspectos essenciais na Engenharia de Software.",
     "home-third-section-paragraph": "Tenho algumas características pessoais bastante fortes e perceptíveis. Sou comunicativo e colaborativo com a equipe, visando alcançar metas de maneira ágil, ou até mesmo colaborando com os stakeholders, onde a comunicação e a colaboração são essenciais. Além disso, tenho um pensamento crítico, sempre tentando prever acontecimentos que possam afetar o percurso de determinada maneira. Caso o problema surja, é necessário enfrentá-lo. Como desenvolvedor full stack, acredito que a adaptabilidade é essencial, o que abre um leque de possibilidades, incluindo a disposição para aprender continuamente.",
+    "skills-primary-section-title": "Explore minhas Habilidades",
+    "skills-primary-section-paragraph": "Além das hard skills, destacadas abaixo, possuo soft skills que também compartilho, como a comunicação, o trabalho em grupo e a colaboratividade. Além disso, tenho um pensamento crítico, sempre tentando prever ao máximo o próximo passo e seus impactos, além da minha adaptabilidade para resolver problemas. Partindo para as hard skills, tento ao máximo ser ágil e construir códigos limpos e legíveis.",
+    "skills-web-development": "Desenvolvimento Web",
+    "skills-backend-development": "Desenvolvimento Backend",
+    "skills-language": "Linguagens",
+    "skills-tools": "Ferramentas",
     "footer-message": "Arthur Dantas é desenvolvedor de software full stack e estudante de Engenharia de Software pela Universidade Federal de Mato Grosso do Sul. Reside em Campo Grande, MS, Brasil. Especializa-se no desenvolvimento de aplicações web eficientes e escaláveis, focadas em oferecer soluções de alta qualidade e desempenho.",
     "footer-rights": "Todos os direitos reservados"
 }

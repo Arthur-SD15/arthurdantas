@@ -132,27 +132,39 @@
         ]
     },
     "skills": {
+        "webDevelopment": [
+            { "name": "React", "icon": "react.png", "special": true },
+            { "name": "Next.js", "icon": "next-js.png", "special": true },
+            { "name": "JavaScript", "icon": "javascript.png", "special": false },
+            { "name": "TypeScript", "icon": "typescript.png", "special": false },
+            { "name": "HTML5", "icon": "html5.png", "special": false },
+            { "name": "Tailwind CSS", "icon": "tailwindcss.png", "special": false },
+            { "name": "shadcn/ui", "icon": "shadcn-ui.png", "special": false }
+        ],
+        "backendDevelopment": [
+            { "name": "Node.js", "icon": "nodejs.png", "special": true },
+            { "name": "NestJS", "icon": "nest-js.png", "special": true },
+            { "name": "Express", "icon": "express-js.png", "special": false },
+            { "name": "Prisma", "icon": "prisma.png", "special": true },
+            { "name": "Flask", "icon": "flask.png", "special": false },
+            { "name": "PostgreSQL", "icon": "postgres.png", "special": false }
+        ],
         "languages": [
-            { "name": "JavaScript", "special": true },
-            { "name": "TypeScript", "special": true },
-            { "name": "Python", "special": false },
-            { "name": "HTML", "special": false },
-            { "name": "CSS", "special": false }
+            { "name": "JavaScript", "icon": "javascript.png", "special": true },
+            { "name": "TypeScript", "icon": "typescript.png", "special": true },
+            { "name": "Python", "icon": "python.png", "special": false }
         ],
-        "frameworks": [
-            { "name": "React", "special": true },
-            { "name": "Node.js", "special": true },
-            { "name": "Express", "special": false },
-            { "name": "Next.js", "special": true },
-            { "name": "NestJS", "special": true }
-        ],
-        "databases": [
-            { "name": "Prisma", "special": true },
-            { "name": "PostgreSQL", "special": false }
+        "devOps": [
+            { "name": "Git", "icon": "git.png", "special": false },
+            { "name": "GitHub Actions", "icon": "github-actions.png", "special": false }
         ],
         "tools": [
-            { "name": "Git", "special": false },
-            { "name": "Postman", "special": false }
+            { "name": "VS Code", "icon": "vscode.png", "special": false },
+            { "name": "Postman", "icon": "postman.png", "special": false },
+            { "name": "Insomnia", "icon": "insomnia.png", "special": false },
+            { "name": "Figma", "icon": "figma.png", "special": false },
+            { "name": "Notion", "icon": "notion.png", "special": false },
+            { "name": "Ubuntu", "icon": "ubuntu.png", "special": false }
         ],
         "softSkills": {
             "en": [

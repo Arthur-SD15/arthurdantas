@@ -25,7 +25,7 @@ const ExperienceCard = memo(({ index, startDate, endDate, company, position, des
         {company && <MdWork className="text-base md:text-xl text-lime-600 dark:text-lime-400" />}
         {institution && <MdSchool className="text-base md:text-xl text-lime-600 dark:text-lime-400" />}
       </span>
-      <div className="order-1 rounded-lg w-full ml-3 md:ml-0 md:w-6/12 p-3 md:px-4 md:py-4 bg-white dark:bg-[#1F1F1F80] shadow-md dark:shadow-lg border-b-4 border-lime-900">
+      <div className="order-1 rounded-lg w-full ml-3 md:ml-0 md:w-6/12 p-3 md:px-4 md:py-4 bg-white dark:bg-[#201f1f4a] shadow-md dark:shadow-lg border-b-4 border-lime-900">
         <h3 className="mb-2 font-medium text-base md:text-md text-gray-800 dark:text-gray-100">
           {company || institution}
         </h3>
