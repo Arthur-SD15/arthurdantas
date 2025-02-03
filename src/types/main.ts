@@ -16,6 +16,15 @@ type experience = {
     icons: string[];
 };
 
+type projects = {
+    title: string;
+    desc: string;
+    linkDeploy: string;
+    linkRepository: string;
+    linkImage: string;
+    tools: string[];
+};
+
 type routes = {
     name: string;
     path: string;
@@ -55,6 +64,10 @@ type data = {
         en: experience[];
         pt: experience[];
     };
+    projects: {
+        en: projects[];
+        pt: projects[];
+    }
     routes: {
         en: routes[];
         pt: routes[];
@@ -66,4 +79,4 @@ type data = {
     };
 };
 
-export type { education, experience, routes, skills, skillsCategory, social, data };
+export type { education, experience, projects, routes, skills, skillsCategory, social, data };

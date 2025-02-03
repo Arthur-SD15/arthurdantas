@@ -115,6 +115,121 @@
             }
         ]
     },
+    "projects": {
+        "en": [
+            {
+                "title": "ClientServer-RenatoRodas",
+                "desc": "Web application developed for an internal e-commerce of Renato Rodas, storing and managing products in the Database, using CRUD methods. The client-server communication is done via Fetch API, with the backend developed in Express and Sequelize as an ORM to facilitate operations in the database.",
+                "linkDeploy": "https://client-server-renato-rodas.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/ClientServer-RenatoRodas",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "PostgreSQL" },
+                    { "name": "Node.js" },
+                    { "name": "Express" },
+                    { "name": "Sequelize"},
+                    { "name": "Fetch API" },
+                    { "name": "React.js" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
+                ]
+            },
+            {
+                "title": "Authentication-RenatoRodas",
+                "desc": "Internal authentication Web application for Renato Rodas e-commerce, using encryption for secure password storage in the Database. The server consists of an Express.js server that implements a user authentication application with JWT (JSON Web Token). Using the crypto module to store passwords in an encrypted way.",
+                "linkDeploy": "https://autenticacao-renato-rodas.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/Autenticacao-RenatoRodas",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "PostgreSQL" },
+                    { "name": "Node.js" },
+                    { "name": "Express" },
+                    { "name": "JWT" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
+                ]
+            },
+            {
+                "title": "",
+                "desc": "",
+                "linkDeploy": "",
+                "linkRepository": "",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "" }
+                ]
+            },
+            {
+                "title": "UML3D",
+                "desc": "Web page developed for the UML3D project, a PICTEC/FUNDECT scientific initiation project.",
+                "linkDeploy": "https://uml3d.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/UML3D",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "JavaScript" },
+                    { "name": "HTML" },
+                    { "name": "CSS" }
+                ]
+            }
+        ],
+        "pt": [
+            {
+                "title": "ClientServer-RenatoRodas",
+                "desc": "Aplicação Web desenvolvida para um e-commerce interno do Renato Rodas, armazenando e gerenciando produtos no Banco de Dados, utilizando métodos CRUD. A comunicação cliente-servidor é feita via API Fetch, com o backend desenvolvido em Express e o Sequelize como ORM para facilitar operações no banco de dados.",
+                "linkDeploy": "https://client-server-renato-rodas.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/ClientServer-RenatoRodas",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "PostgreSQL" },
+                    { "name": "Node.js" },
+                    { "name": "Express" },
+                    { "name": "Sequelize"},
+                    { "name": "Fetch API" },
+                    { "name": "React.js" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
+                ]
+            },
+            {
+                "title": "Autenticação-RenatoRodas",
+                "desc": "Aplicação Web de autenticação interna para o e-commerce do Renato Rodas, utilizando criptografia para armazenamento seguro de senhas no Banco de Dados. O servidor, consiste em um servidor Express.js que implementa uma aplicação de autenticação de usuários com JWT (JSON Web Token). Utilizando o módulo crypto para armazenar as senhas de forma criptografada.",
+                "linkDeploy": "https://autenticacao-renato-rodas.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/Autenticacao-RenatoRodas",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "PostgreSQL" },
+                    { "name": "Node.js" },
+                    { "name": "Express" },
+                    { "name": "JWT" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
+                    
+                ]
+            },
+            {
+                "title": "",
+                "desc": "",
+                "linkDeploy": "",
+                "linkRepository": "",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "" }
+                ]
+            },
+            {
+                "title": "UML3D",
+                "desc": "Página Web desenvolvida para o projeto UML3D, um projeto de iniciação científica PICTEC/FUNDECT.",
+                "linkDeploy": "https://uml3d.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/UML3D",
+                "linkImage": "/images/projects/",
+                "tools": [
+                    { "name": "JavaScript" },
+                    { "name": "HTML" },
+                    { "name": "CSS" }
+                ]
+            }
+        ]
+    },
     "routes": {
         "en": [
             { "name": "Home", "path": "/" },
