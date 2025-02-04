@@ -23,12 +23,16 @@ const ProjectsPrimarySection = memo(({ projects }: { projects: projects[] }) => 
             <div className="w-11/12 md:w-10/12 mx-auto py-3 flex flex-col items-center gap-6 md:gap-12 dark:bg-grey-900 flex-grow">
                 {displayedProjects.map((project, index) => (
                     <ProjectCard 
-                    key={index} 
-                    {...project} 
-                    index={index} 
-                    tools={project.tools.map(tool => ({ name: tool }))} // Transforma o array de strings em objetos com a chave 'name'
-                 />
-                
+                        key={index} 
+                        index={index}
+                        title={project.title}
+                        desc={project.desc}
+                        linkDeploy={project.linkDeploy}
+                        linkRepository={project.linkRepository}
+                        linkImage={project.linkImage}
+                        // @ts-ignore
+                        tools={project?.tools}
+                    />
                 ))}
             </div>
 

@@ -1,4 +1,4 @@
-"use client";
+"use strict";
 import { memo, useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 const FaGithub = dynamic(() => import('react-icons/fa').then(mod => mod.FaGithub));
 const FaExternalLinkAlt = dynamic(() => import('react-icons/fa').then(mod => mod.FaExternalLinkAlt));
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
     index: number;
     title: string;
     desc: string;
@@ -14,7 +14,7 @@ interface ProjectCardProps {
     linkRepository: string;
     linkImage: string;
     tools: { name: string }[];
-}
+  }
 
 const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, linkImage, tools }: ProjectCardProps) => {
     const isEven = index % 2 === 0;
@@ -66,7 +66,7 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
                     <ul className="flex flex-wrap gap-2 mt-2">
                         {tools.map((tool, index) => (
                             <li key={index} className="px-3 py-1 text-xs font-medium bg-lime-900 text-white rounded-full shadow-md transition-transform transform hover:scale-105">
-                                {tool.name}
+                                {tool?.name || ''}
                             </li>
                         ))}
                     </ul>
