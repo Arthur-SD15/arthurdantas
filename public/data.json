@@ -122,7 +122,7 @@
                 "desc": "Web application developed for an internal e-commerce of Renato Rodas, storing and managing products in the Database, using CRUD methods. The client-server communication is done via Fetch API, with the backend developed in Express and Sequelize as an ORM to facilitate operations in the database.",
                 "linkDeploy": "https://client-server-renato-rodas.vercel.app/",
                 "linkRepository": "https://github.com/Arthur-SD15/ClientServer-RenatoRodas",
-                "linkImage": "/images/projects/",
+                "linkImage": "/images/projects/ClientServer-RR.png",
                 "tools": [
                     { "name": "PostgreSQL" },
                     { "name": "Node.js" },
@@ -139,7 +139,7 @@
                 "desc": "Internal authentication Web application for Renato Rodas e-commerce, using encryption for secure password storage in the Database. The server consists of an Express.js server that implements a user authentication application with JWT (JSON Web Token). Using the crypto module to store passwords in an encrypted way.",
                 "linkDeploy": "https://autenticacao-renato-rodas.vercel.app/",
                 "linkRepository": "https://github.com/Arthur-SD15/Autenticacao-RenatoRodas",
-                "linkImage": "/images/projects/",
+                "linkImage": "/images/projects/Autenticacao-RR.png",
                 "tools": [
                     { "name": "PostgreSQL" },
                     { "name": "Node.js" },
@@ -150,23 +150,30 @@
                 ]
             },
             {
-                "title": "",
-                "desc": "",
-                "linkDeploy": "",
-                "linkRepository": "",
-                "linkImage": "/images/projects/",
+                "title": "ExtractJSON",
+                "desc": "Web application to extract information from a JSON file, the application offers upload, processing, and data export functionalities. To process JSON files, the standard Python library for JSON manipulation is used, allowing reading and extracting specific information.",
+                "linkDeploy": "https://extract-json-frontend.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/ExtractJSON",
+                "linkImage": "/images/projects/ExtractJSON.png",
                 "tools": [
-                    { "name": "" }
+                    { "name": "Python" },
+                    { "name": "Flask" },
+                    { "name": "Pandas" },
+                    { "name": "React.js" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
                 ]
             },
             {
-                "title": "UML3D",
-                "desc": "Web page developed for the UML3D project, a PICTEC/FUNDECT scientific initiation project.",
-                "linkDeploy": "https://uml3d.vercel.app/",
-                "linkRepository": "https://github.com/Arthur-SD15/UML3D",
-                "linkImage": "/images/projects/",
+                "title": "CapivaraNotes",
+                "desc": "Progressive Web App of notes with CRUD, using IndexedDB for local storage. Offline communication is improved with service worker. The application allows creating, viewing, editing, and deleting notes, with forms for title, description, category, and date, as well as buttons to manage the notes.",
+                "linkDeploy": "https://pwa-capivara-notes.vercel.app",
+                "linkRepository": "https://github.com/Arthur-SD15/PWA-CapivaraNotes",
+                "linkImage": "/images/projects/PWACapivaraNotes.png",
                 "tools": [
-                    { "name": "JavaScript" },
+                    { "name": "IndexedDB" },
+                    { "name": "Vite" },
+                    { "name": "PWA" },
                     { "name": "HTML" },
                     { "name": "CSS" }
                 ]
@@ -178,7 +185,7 @@
                 "desc": "Aplicação Web desenvolvida para um e-commerce interno do Renato Rodas, armazenando e gerenciando produtos no Banco de Dados, utilizando métodos CRUD. A comunicação cliente-servidor é feita via API Fetch, com o backend desenvolvido em Express e o Sequelize como ORM para facilitar operações no banco de dados.",
                 "linkDeploy": "https://client-server-renato-rodas.vercel.app/",
                 "linkRepository": "https://github.com/Arthur-SD15/ClientServer-RenatoRodas",
-                "linkImage": "/images/projects/",
+                "linkImage": "/images/projects/ClientServer-RR.png",
                 "tools": [
                     { "name": "PostgreSQL" },
                     { "name": "Node.js" },
@@ -195,7 +202,7 @@
                 "desc": "Aplicação Web de autenticação interna para o e-commerce do Renato Rodas, utilizando criptografia para armazenamento seguro de senhas no Banco de Dados. O servidor, consiste em um servidor Express.js que implementa uma aplicação de autenticação de usuários com JWT (JSON Web Token). Utilizando o módulo crypto para armazenar as senhas de forma criptografada.",
                 "linkDeploy": "https://autenticacao-renato-rodas.vercel.app/",
                 "linkRepository": "https://github.com/Arthur-SD15/Autenticacao-RenatoRodas",
-                "linkImage": "/images/projects/",
+                "linkImage": "/images/projects/Autenticacao-RR.png",
                 "tools": [
                     { "name": "PostgreSQL" },
                     { "name": "Node.js" },
@@ -203,27 +210,33 @@
                     { "name": "JWT" },
                     { "name": "Next.js" },
                     { "name": "Tailwind CSS" }
-                    
                 ]
             },
             {
-                "title": "",
-                "desc": "",
-                "linkDeploy": "",
-                "linkRepository": "",
-                "linkImage": "/images/projects/",
+                "title": "ExtractJSON",
+                "desc": "Aplicação Web para extrair informações de um arquivo JSON, a aplicação oferece funcionalidades de upload, processamento e exportação de dados. Para processar arquivos JSON, utiliza-se a biblioteca padrão do Python para manipulação de JSON, permitindo a leitura e extração de informações específicas.",
+                "linkDeploy": "https://extract-json-frontend.vercel.app/",
+                "linkRepository": "https://github.com/Arthur-SD15/ExtractJSON",
+                "linkImage": "/images/projects/ExtractJSON.png",
                 "tools": [
-                    { "name": "" }
+                    { "name": "Python" },
+                    { "name": "Flask" },
+                    { "name": "Pandas" },
+                    { "name": "React.js" },
+                    { "name": "Next.js" },
+                    { "name": "Tailwind CSS" }
                 ]
             },
             {
-                "title": "UML3D",
-                "desc": "Página Web desenvolvida para o projeto UML3D, um projeto de iniciação científica PICTEC/FUNDECT.",
-                "linkDeploy": "https://uml3d.vercel.app/",
-                "linkRepository": "https://github.com/Arthur-SD15/UML3D",
-                "linkImage": "/images/projects/",
+                "title": "CapivaraNotes",
+                "desc": "Progressive Web App de anotações com CRUD, utilizando IndexedDB para armazenamento local. A comunicação offline é melhorada com service worker. A aplicação permite criar, visualizar, editar e excluir anotações, com formulários para título, descrição, categoria e data, além de botões para gerenciar as anotações.",
+                "linkDeploy": "https://pwa-capivara-notes.vercel.app",
+                "linkRepository": "https://github.com/Arthur-SD15/PWA-CapivaraNotes",
+                "linkImage": "/images/projects/PWACapivaraNotes.png",
                 "tools": [
-                    { "name": "JavaScript" },
+                    { "name": "IndexedDB" },
+                    { "name": "Vite" },
+                    { "name": "PWA" },
                     { "name": "HTML" },
                     { "name": "CSS" }
                 ]
