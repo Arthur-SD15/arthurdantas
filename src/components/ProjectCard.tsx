@@ -1,6 +1,10 @@
-import Image from 'next/image';
+"use client";
 import { memo, useState } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+const FaGithub = dynamic(() => import('react-icons/fa').then(mod => mod.FaGithub));
+const FaExternalLinkAlt = dynamic(() => import('react-icons/fa').then(mod => mod.FaExternalLinkAlt));
 
 interface ProjectCardProps {
     index: number;
@@ -9,7 +13,7 @@ interface ProjectCardProps {
     linkDeploy: string;
     linkRepository: string;
     linkImage: string;
-    tools: string[];
+    tools: { name: string }[];
 }
 
 const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, linkImage, tools }: ProjectCardProps) => {
@@ -65,7 +69,7 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
                                 {tool.name}
                             </li>
                         ))}
-                    </ul>    
+                    </ul>
                 </div>
             </div>
 

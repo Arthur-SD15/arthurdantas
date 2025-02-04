@@ -1,7 +1,9 @@
+"use client";
 import { projects } from "@/src/types/main";
-import ProjectCard from "../ProjectCard";
 import { memo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMemo } from "react";
+import ProjectCard from "../ProjectCard";
 
 const ProjectsPrimarySection = memo(({ projects }: { projects: projects[] }) => {
     const { t } = useTranslation("common");
@@ -9,16 +11,24 @@ const ProjectsPrimarySection = memo(({ projects }: { projects: projects[] }) => 
     const projectsPerPage = 2;
     const totalPages = Math.ceil(projects.length / projectsPerPage);
 
-    const displayedProjects = projects.slice(
-        currentPage * projectsPerPage,
-        (currentPage + 1) * projectsPerPage
-    );
+    const displayedProjects = useMemo(() => {
+        return projects.slice(
+            currentPage * projectsPerPage,
+            (currentPage + 1) * projectsPerPage
+        );
+    }, [currentPage, projects]);
 
     return (
         <div className="animate-rise-from-ground min-h-screen pt-[10vh] flex flex-col justify-between items-center">
             <div className="w-11/12 md:w-10/12 mx-auto py-3 flex flex-col items-center gap-6 md:gap-12 dark:bg-grey-900 flex-grow">
                 {displayedProjects.map((project, index) => (
-                    <ProjectCard key={index} {...project} index={index} />
+                    <ProjectCard 
+                    key={index} 
+                    {...project} 
+                    index={index} 
+                    tools={project.tools.map(tool => ({ name: tool }))} // Transforma o array de strings em objetos com a chave 'name'
+                 />
+                
                 ))}
             </div>
 
