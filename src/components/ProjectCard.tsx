@@ -14,7 +14,7 @@ export interface ProjectCardProps {
     linkRepository: string;
     linkImage: string;
     tools: { name: string }[];
-  }
+}
 
 const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, linkImage, tools }: ProjectCardProps) => {
     const isEven = index % 2 === 0;
@@ -87,7 +87,9 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
                 />
                 
                 <div
-                    className={`absolute inset-0 bg-gradient-to-${isEven ? 'l' : 'r'} ${
+                    className={`absolute inset-0 ${
+                        isEven ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
+                    } ${
                         isLightTheme ? 'from-white' : 'from-black/70'
                     } to-transparent transition-opacity duration-500 ${
                         hovered ? 'opacity-100' : 'opacity-0'
