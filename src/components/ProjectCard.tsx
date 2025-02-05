@@ -1,4 +1,4 @@
-"use strict";
+"use client";
 import { memo, useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -23,8 +23,8 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
     const isLightTheme = document.documentElement.classList.contains('light');
 
     return (
-        <div className={`relative h-[30vh] w-full flex ${isEven ? '' : 'flex-row-reverse'}`}>
-            <div className={`w-10/12 h-full relative z-10 flex flex-col ${isEven ? 'items-start' : 'items-end'}`}>
+        <div className={`relative h-auto md:h-[30vh] w-full flex flex-col md:flex-row ${isEven ? '' : 'md:flex-row-reverse'}`}>
+            <div className={`w-full md:w-10/12 h-full relative z-10 flex flex-col justify-center ${isEven ? 'items-start' : 'items-end'}`}>
                 <div className={`flex items-center gap-2 ${isEven ? 'flex-row' : 'flex-row-reverse'}`}>
                     <h3 className={`text-lg font-bold ${isEven ? 'text-left' : 'text-right'}`}>
                         {title}
@@ -74,7 +74,7 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
             </div>
 
             <div 
-                className={`relative w-5/12 h-full overflow-hidden rounded-lg transition-transform duration-300 hover:-translate-y-1 ${isEven ? '-ml-8' : '-mr-8'}`}
+                className={`relative w-full md:w-5/12 h-48 md:h-full overflow-hidden rounded-lg transition-transform duration-300 hover:-translate-y-1 ${isEven ? 'md:-ml-8' : 'md:-mr-8'} mt-4 md:mt-0`}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >
@@ -83,7 +83,7 @@ const ProjectCard = memo(({ index, title, desc, linkDeploy, linkRepository, link
                     alt={title}
                     layout="fill"
                     objectFit="cover"
-                    className={`rounded-lg ${isEven ? '' : 'scale-x-[-1]'}`}
+                    className={`transition-transform duration-300 rounded-lg ${isEven ? '' : 'scale-x-[-1]'} ${hovered ? 'scale-105' : 'scale-100'}`}
                 />
                 
                 <div
